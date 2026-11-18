@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Zonas de entrega | Lappe Cocina</title>
+  <meta name="description" content="Mapa de zonas de entrega de Lappe. Consulta si llegamos a tu colonia y cuánto cuesta el envío.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <style>
+    @font-face {
+      font-family: 'Americana';
+      src: url('americana-bold.woff2') format('woff2'), url('americana-bold.otf') format('opentype');
+      font-weight: 700;
+      font-display: swap;
+    }
+    :root {
+      --orange: #EC6D4A;
+      --orange-deep: #D4502F;
+      --cream: #F5EEE1;
+      --cream-dark: #EDE4D2;
+      --beige: #DDCBBA;
+      --sage: #B4B39C;
+      --texto: #3A3A2E;
+      --gris: #8A8A7A;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Plus Jakarta Sans', sans-serif; background: var(--cream); color: var(--texto); line-height: 1.6; }
+
+    .top { background: var(--texto); padding: 18px 24px; display: flex; align-items: center; justify-content: space-between; }
+    .logo { font-family: 'Americana', 'Plus Jakarta Sans', sans-serif; color: #fff; font-weight: 700; font-size: 1.3rem; text-decoration: none; }
+    .logo span { font-family: 'Americana', 'Plus Jakarta Sans', sans-serif; text-align: center; display: block; color: var(--orange); font-size: .6rem; letter-spacing: .35em; text-transform: uppercase; font-weight: 700; }
+    .volver { color: var(--cream); text-decoration: none; font-size: .85rem; font-weight: 700; background: rgba(255,255,255,.1); padding: 9px 18px; border-radius: 100px; }
+    .volver:hover { background: var(--orange); }
+
+    .hero { text-align: center; padding: 48px 24px 10px; max-width: 720px; margin: 0 auto; }
+    .hero .pill { display: inline-block; background: #F9E2D8; color: var(--orange-deep); font-weight: 800; font-size: .75rem; letter-spacing: .16em; text-transform: uppercase; padding: 9px 18px; border-radius: 100px; margin-bottom: 18px; }
+    h1 { font-size: clamp(1.9rem, 5vw, 2.7rem); font-weight: 800; color: var(--orange); line-height: 1.15; margin-bottom: 10px; }
+    .hero p { color: var(--gris); font-size: 1.02rem; }
+
+    .buscador { max-width: 560px; margin: 24px auto 0; position: relative; }
+    .buscador input { width: 100%; padding: 16px 22px 16px 52px; border: 2px solid var(--beige); border-radius: 100px; font-family: inherit; font-size: 1.02rem; background: #fff; color: var(--texto); outline: none; }
+    .buscador input:focus { border-color: var(--orange); box-shadow: 0 0 0 4px rgba(236,109,74,.14); }
+    .buscador .lupa { position: absolute; left: 20px; top: 50%; transform: translateY(-50%); font-size: 1.2rem; }
+
+    #resultado { max-width: 560px; margin: 12px auto 0; display: none; border-radius: 16px; padding: 16px 20px; font-size: .98rem; text-align: left; }
+    #resultado.ok { display: block; background: #fff; border: 2px solid var(--orange); }
+    #resultado.no { display: block; background: #fff; border: 2px solid var(--beige); }
+    #resultado .r-zona { font-weight: 800; color: var(--orange-deep); font-size: 1.1rem; }
+    #resultado a { color: var(--orange-deep); font-weight: 800; }
+
+    .wrap { max-width: 980px; margin: 0 auto; padding: 30px 20px 80px; }
+
+    #mapa { height: 520px; border-radius: 22px; box-shadow: 0 10px 36px rgba(0,0,0,.12); border: 3px solid #fff; z-index: 1; }
+    .leyenda { display: flex; flex-wrap: wrap; gap: 9px; justify-content: center; margin-top: 18px; }
+    .leg { display: inline-flex; align-items: center; gap: 8px; background: #fff; border: 1.5px solid var(--cream-dark); border-radius: 100px; padding: 7px 15px; font-size: .85rem; font-weight: 700; }
+    .leg i { width: 13px; height: 13px; border-radius: 50%; display: inline-block; }
+    .disclaimer { text-align: center; color: var(--gris); font-size: .8rem; margin-top: 12px; }
+
+    details { max-width: 860px; margin: 34px auto 0; background: #fff; border: 1.5px solid var(--beige); border-radius: 18px; padding: 4px 22px; }
+    summary { cursor: pointer; font-weight: 800; color: var(--orange-deep); padding: 14px 0; font-size: .98rem; }
+    .zlista { margin: 6px 0 18px; }
+    .zlista h4 { font-size: .85rem; margin: 14px 0 8px; }
+    .zlista h4 span { color: var(--gris); font-weight: 600; }
+    .chips { display: flex; flex-wrap: wrap; gap: 6px; }
+    .chip { background: var(--cream); border: 1px solid var(--cream-dark); color: var(--texto); font-size: .8rem; font-weight: 600; padding: 4px 11px; border-radius: 100px; }
+    .chip.hl { background: #F9E2D8; border-color: var(--orange); color: var(--orange-deep); }
+
+    .nota { max-width: 720px; margin: 36px auto 0; text-align: center; }
+    .nota p { color: var(--gris); font-size: .93rem; margin-bottom: 14px; }
+    .wa { display: inline-block; background: #25D366; color: #fff; font-weight: 800; padding: 13px 28px; border-radius: 100px; text-decoration: none; font-size: .95rem; }
+    .cta-pedido { text-align: center; margin-top: 34px; }
+    .cta-pedido a { display: inline-block; background: var(--orange); color: #fff; font-weight: 800; font-size: 1.05rem; padding: 16px 40px; border-radius: 100px; text-decoration: none; box-shadow: 0 8px 26px rgba(236,109,74,.35); }
+
+    footer { background: var(--texto); color: rgba(245,238,225,.75); text-align: center; padding: 24px; font-size: .8rem; margin-top: 60px; }
+    footer a { color: inherit; }
+
+    .leaflet-tooltip.ztip { background: #fff; border: 1.5px solid var(--beige); border-radius: 10px; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; color: var(--texto); box-shadow: 0 4px 14px rgba(0,0,0,.15); }
+    @media (max-width: 560px) { #mapa { height: 420px; } }
+  </style>
+</head>
+<body>
+
+<div class="top">
+  <a class="logo" href="index.html">LAPPE<span>Cocina</span></a>
+  <a class="volver" href="index.html">← Volver al sitio</a>
+</div>
+
+<div class="hero">
+  <span class="pill">🚚 Entrega a domicilio</span>
+  <h1>¿Llegamos a tu colonia?</h1>
+  <p>Escribe tu colonia o explora el mapa. Entregamos domingos y lunes en CDMX (y un poquito de Edomex).</p>
+  <div class="buscador">
+    <span class="lupa">🔍</span>
+    <input id="q" type="text" placeholder="Escribe tu colonia... ej. Nápoles, Condesa, Polanco" autocomplete="off">
+  </div>
+  <div id="resultado"></div>
+</div>
+
+<div class="wrap">
+  <div id="mapa"></div>
+  <div class="leyenda" id="leyenda"></div>
+  <p class="disclaimer">Mapa ilustrativo con áreas aproximadas — confirma tu colonia exacta con el buscador de arriba 🔍</p>
+
+  <details>
+    <summary>📋 Ver la lista completa de colonias por zona</summary>
+    <div class="zlista" id="zlista">Cargando...</div>
+  </details>
+
+  <div class="nota">
+    <p>😕 ¿Tu colonia no aparece? Escríbenos y con gusto revisamos si podemos llegar hasta ti.</p>
+    <a class="wa" href="https://wa.me/5215538546333?text=Hola%20Lappe!%20Mi%20colonia%20no%20aparece%20en%20las%20zonas%20de%20entrega%2C%20%C2%BFpodr%C3%ADan%20llegar%3F%20%F0%9F%8F%A1" target="_blank" rel="noopener">💬 Preguntar por WhatsApp</a>
+  </div>
+
+  <div class="cta-pedido">
+    <a href="index.html#menu-semanal">🍽️ Hacer mi pedido del menú semanal</a>
+  </div>
+</div>
+
+<footer>
+  © 2026 Lappe Cocina · <a href="index.html">lappecocina.com</a> · Hecho por <a href="https://brotadigital.mx/" target="_blank" rel="noopener">Brota</a>
+</footer>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script>
+const URL_MENU = 'https://script.google.com/macros/s/AKfycbxTWhJF4jbMfdnXZA9IYSsCn3Tz17LBpAzcgzUblzHmOGSDpVabSADBVTmltEMzqN16/exec';
+
+// Color por zona: de cerquita (verde) a lejitos (oscuro)
+const COLORES = { 1: '#7C9A5A', 2: '#B4B39C', 3: '#D9A036', 4: '#EC6D4A', 5: '#D4502F', 6: '#3A3A2E' };
+
+// Áreas aproximadas de cada zona en el mapa (círculos por grupo de colonias)
+// [zona, lat, lng, radio en metros]
+const AREAS = [
+  [1, 19.3805, -99.1730, 2100],  // Del Valle · Nápoles · Mixcoac · SJ Insurgentes
+  [1, 19.3495, -99.1615, 1500],  // Coyoacán Centro · Del Carmen · Churubusco
+  [2, 19.4135, -99.1730, 1900],  // Roma · Condesa · Juárez · Escandón
+  [2, 19.3960, -99.1500, 1400],  // Narvarte
+  [2, 19.3620, -99.1650, 800],   // Xoco · Los Reyes
+  [3, 19.3400, -99.1970, 2100],  // San Ángel · Altavista · Pedregal
+  [3, 19.3670, -99.1400, 1500],  // Portales · Álamos
+  [3, 19.3330, -99.1480, 1000],  // Country Club · Ciudad Jardín
+  [4, 19.3180, -99.2320, 2700],  // Olivar · Axomiatla · Desierto · San Jerónimo · Magdalena
+  [4, 19.4310, -99.1790, 850],   // Anzures
+  [4, 19.4440, -99.1600, 1200],  // San Rafael · Sta. María la Ribera
+  [5, 19.4340, -99.1990, 2100],  // Polanco · Granada · Lomas de Chapultepec
+  [5, 19.3450, -99.2130, 1300],  // Las Águilas
+  [5, 19.3590, -99.2600, 1800],  // Santa Fe · Zedec
+  [5, 19.2930, -99.1250, 1200],  // Villa Coapa
+  [6, 19.3990, -99.2790, 2200],  // Interlomas · La Herradura · Bosque Real · Lomas Anáhuac
+  [6, 19.3560, -99.2930, 2000],  // Cuajimalpa · San Mateo · Vistahermosa
+  [6, 19.3930, -99.2530, 1300],  // Bosques de las Lomas
+  [6, 19.4430, -99.2130, 1100],  // Irrigación · Reforma Social
+  [6, 19.2880, -99.1670, 1100],  // Tlalpan Centro
+];
+
+let colonias = [];
+let precios = {}; // zona -> precio
+
+const norm = s => String(s).toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '');
+
+// ---- MAPA ----
+const mapa = L.map('mapa', { scrollWheelZoom: false }).setView([19.372, -99.20], 12);
+L.tileLayer('https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png', {
+  attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="https://carto.com/">CARTO</a>',
+  maxZoom: 18
+}).addTo(mapa);
+
+function pintarAreas() {
+  AREAS.forEach(function (a) {
+    const z = a[0], color = COLORES[z] || '#EC6D4A';
+    const precio = precios[z] ? ' · $' + precios[z] : '';
+    L.circle([a[1], a[2]], {
+      radius: a[3],
+      color: color,
+      weight: 2,
+      fillColor: color,
+      fillOpacity: 0.32
+    }).addTo(mapa)
+      .bindTooltip('Zona ' + z + precio, { className: 'ztip', direction: 'top' });
+  });
+}
+
+function pintarLeyenda() {
+  let html = '';
+  Object.keys(COLORES).sort((a, b) => a - b).forEach(function (z) {
+    if (!precios[z]) return;
+    html += '<span class="leg"><i style="background:' + COLORES[z] + ';"></i>Zona ' + z + ' — $' + precios[z] + '</span>';
+  });
+  document.getElementById('leyenda').innerHTML = html;
+}
+
+// ---- DATOS ----
+window.addEventListener('load', async function () {
+  pintarAreas(); // se pinta de una vez; los precios llegan en cuanto carga el Excel
+  try {
+    const r = await fetch(URL_MENU);
+    const data = await r.json();
+    colonias = (data.zonas && data.zonas.colonias) || [];
+    colonias.forEach(c => { precios[c.z] = c.p; });
+    // repintar tooltips con precio
+    mapa.eachLayer(function (l) { if (l instanceof L.Circle) mapa.removeLayer(l); });
+    pintarAreas();
+    pintarLeyenda();
+    pintarLista();
+  } catch (e) {
+    document.getElementById('zlista').textContent = 'No pudimos cargar la lista. Recarga la página.';
+  }
+  document.getElementById('q').addEventListener('input', buscar);
+});
+
+function pintarLista(filtro) {
+  const porZona = {};
+  colonias.forEach(c => { (porZona[c.z] = porZona[c.z] || []).push(c); });
+  let html = '';
+  Object.keys(porZona).sort((a, b) => a - b).forEach(function (z) {
+    const items = porZona[z].sort((a, b) => a.c.localeCompare(b.c, 'es'));
+    html += '<h4 style="color:' + (COLORES[z] || '#EC6D4A') + ';">● Zona ' + z + ' <span>— envío $' + precios[z] + ' · ' + items.length + ' colonias</span></h4><div class="chips">';
+    items.forEach(function (c) {
+      const hl = filtro && norm(c.c).includes(filtro);
+      html += '<span class="chip' + (hl ? ' hl' : '') + '">' + c.c + '</span>';
+    });
+    html += '</div>';
+  });
+  document.getElementById('zlista').innerHTML = html;
+}
+
+function buscar() {
+  const q = norm(document.getElementById('q').value.trim());
+  const res = document.getElementById('resultado');
+  pintarLista(q.length >= 2 ? q : null);
+
+  if (q.length < 2) { res.className = ''; res.innerHTML = ''; return; }
+
+  const hits = colonias.filter(c => norm(c.c).includes(q));
+  if (hits.length) {
+    const c = hits[0];
+    res.className = 'ok';
+    res.innerHTML = '✅ ¡Sí llegamos a <strong>' + c.c + '</strong> (' + c.a + ')!<br>'
+      + '<span class="r-zona">Zona ' + c.z + ' — envío $' + c.p + ' MXN</span>';
+  } else {
+    res.className = 'no';
+    res.innerHTML = '😕 No encontramos esa colonia en nuestras rutas. '
+      + '<a href="https://wa.me/5215538546333?text=' + encodeURIComponent('Hola Lappe! ¿Llegan a mi colonia? 🏡') + '" target="_blank" rel="noopener">Pregúntanos por WhatsApp</a> — a veces sí podemos llegar.';
+  }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,3777 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <!-- Security Headers -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; connect-src 'self' https://script.google.com https://script.googleusercontent.com https://docs.google.com; frame-ancestors 'none'; base-uri 'self'; form-action 'self';" />
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta http-equiv="X-Content-Type-Options" content="nosniff" />
+  <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=(), usb=()" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lappe Cocina | Comida congelada lista en 10 minutos</title>
+  <meta name="description" content="Comida casera congelada al alto vacío con entrega a domicilio en CDMX. Quesadillas, cochinita pibil, pastor, lasagna y menú semanal. Lista en 10 minutos." />
+  <meta name="keywords" content="comida congelada CDMX, comida casera a domicilio, comida congelada a domicilio, alto vacío, comida lista en 10 minutos, quesadillas de chicharrón, cochinita pibil, carne al pastor, pastor árabe, tacos árabes, chicharrón en salsa, carne en su jugo, tacos campechanos, lasagna congelada, ravioles, crepas saladas, quiches, rosca de tamal, rosca de elote, salsas gourmet, salsas mexicanas, mini tacos, tequeños, menú semanal a domicilio, comida semanal CDMX, comida para congelar, comida familiar, entrega a domicilio CDMX, comida mexicana congelada, Lappe Cocina" />
+  <link rel="canonical" href="index.html" />
+  <meta name="theme-color" content="#EC6D4A" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23EC6D4A'/%3E%3Ctext x='32' y='45' font-family='Arial,sans-serif' font-size='38' font-weight='800' fill='%23F5EEE1' text-anchor='middle'%3EL%3C/text%3E%3C/svg%3E" />
+  <!-- Open Graph (WhatsApp / Facebook / Instagram) -->
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Lappe Cocina" />
+  <meta property="og:title" content="Lappe Cocina | Comida congelada lista en 10 minutos" />
+  <meta property="og:description" content="Comida casera congelada al alto vacío con entrega a domicilio en CDMX. Quesadillas, cochinita, pastor, lasagna y menú semanal." />
+  <meta property="og:url" content="https://lappecocina.com/" />
+  <meta property="og:image" content="https://lappecocina.com/og-lappe.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale" content="es_MX" />
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Lappe Cocina | Comida congelada lista en 10 minutos" />
+  <meta name="twitter:description" content="Comida casera congelada al alto vacío con entrega a domicilio en CDMX. Lista en 10 minutos." />
+  <meta name="twitter:image" content="https://lappecocina.com/og-lappe.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    /* =========================================
+       RESET & BASE
+    ========================================= */
+    @font-face {
+      font-family: 'Americana';
+      src: url('americana-bold.woff2') format('woff2'), url('americana-bold.otf') format('opentype');
+      font-weight: 700;
+      font-style: normal;
+      font-display: swap;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg-white: #F5EEE1;
+      --bg-light: #EDE4D2;
+      --bg-dark: #3A3A2E;
+      --bg-card: #FFFFFF;
+      --accent: #EC6D4A;
+      --accent-light: #F9E2D8;
+      --accent-hover: #D4502F;
+      --green: #6B6A52;
+      --green-light: #EBEBDF;
+      --text-dark: #3A3A2E;
+      --text-muted: #8A8A7A;
+      --font: 'Plus Jakarta Sans', sans-serif;
+      --radius: 16px;
+      --radius-img: 20px;
+      --shadow-sm: 0 2px 12px rgba(0,0,0,0.07);
+      --shadow-md: 0 8px 32px rgba(0,0,0,0.10);
+      --shadow-lg: 0 20px 60px rgba(0,0,0,0.15);
+      --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      background-color: var(--bg-white);
+      color: var(--text-dark);
+      font-family: var(--font);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* =========================================
+       UTILITY
+    ========================================= */
+    .container {
+      max-width: 1160px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    .section-label {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      background: var(--accent-light);
+      padding: 6px 14px;
+      border-radius: 100px;
+      margin-bottom: 16px;
+    }
+
+    .section-heading {
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      font-weight: 800;
+      line-height: 1.15;
+      color: var(--text-dark);
+      margin-bottom: 12px;
+    }
+
+    .section-sub {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      max-width: 520px;
+    }
+
+    /* =========================================
+       FADE-IN ANIMATION
+    ========================================= */
+    .fade-up {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .fade-up.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* =========================================
+       NAVIGATION
+    ========================================= */
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--bg-dark);
+      border-bottom: 1px solid rgba(255,255,255,0.07);
+    }
+
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 68px;
+    }
+
+    .nav-logo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      line-height: 1;
+    }
+
+    .nav-logo-main {
+      font-family: 'Americana', var(--font);
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: #FFFFFF;
+      letter-spacing: 0.04em;
+    }
+
+    .nav-logo-sub {
+      font-family: 'Americana', var(--font);
+      font-size: 0.65rem;
+      font-weight: 700;
+      color: var(--accent);
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      margin-top: 2px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 32px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: rgba(255,255,255,0.75);
+      transition: color var(--transition);
+    }
+
+    .nav-links a:hover {
+      color: #FFFFFF;
+    }
+
+    .nav-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--accent);
+      color: #FFFFFF;
+      font-size: 0.88rem;
+      font-weight: 700;
+      padding: 10px 22px;
+      border-radius: 100px;
+      transition: background var(--transition), transform var(--transition);
+    }
+
+    .nav-cta:hover {
+      background: var(--accent-hover);
+      transform: scale(1.04);
+    }
+
+    .nav-hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      padding: 4px;
+    }
+
+    .nav-hamburger span {
+      width: 24px;
+      height: 2px;
+      background: #fff;
+      border-radius: 2px;
+      transition: var(--transition);
+    }
+
+    .mobile-menu {
+      display: none;
+      background: #3A3A2E;
+      padding: 20px 24px;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    .mobile-menu a {
+      color: rgba(255,255,255,0.85);
+      font-weight: 600;
+      font-size: 0.95rem;
+    }
+
+    .mobile-menu .nav-cta {
+      width: fit-content;
+    }
+
+    .mobile-menu.open {
+      display: flex;
+    }
+
+    /* =========================================
+       HERO
+    ========================================= */
+    .hero {
+      position: relative;
+      min-height: 92vh;
+      display: flex;
+      align-items: flex-end;
+      overflow: hidden;
+      background: #3A3A2E;
+    }
+
+    .hero-bg-img {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      transform: scale(1.06);
+      transition: transform 8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      will-change: transform;
+    }
+
+    .hero:hover .hero-bg-img {
+      transform: scale(1.0);
+    }
+
+    .hero-slide {
+      opacity: 0;
+      transition: opacity 1.5s ease, transform 8s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+
+    .hero-slide.on {
+      opacity: 1;
+    }
+
+    .hero-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to top,
+        rgba(10,4,2,0.93) 0%,
+        rgba(10,4,2,0.60) 40%,
+        rgba(10,4,2,0.18) 75%,
+        transparent 100%
+      );
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      padding-top: 140px;
+      padding-bottom: 88px;
+    }
+
+    .hero-grid {
+      max-width: 680px;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--accent);
+      color: #fff;
+      font-size: 0.82rem;
+      font-weight: 700;
+      padding: 8px 18px;
+      border-radius: 100px;
+      margin-bottom: 28px;
+      letter-spacing: 0.04em;
+    }
+
+    .hero-title {
+      font-size: clamp(2.8rem, 5.5vw, 4.6rem);
+      font-weight: 800;
+      line-height: 1.08;
+      color: #fff;
+      margin-bottom: 20px;
+    }
+
+    .hero-title span {
+      color: var(--accent);
+    }
+
+    .hero-sub {
+      font-size: 1.1rem;
+      color: rgba(255,255,255,0.70);
+      line-height: 1.7;
+      margin-bottom: 40px;
+      max-width: 500px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-bottom: 48px;
+    }
+
+    .btn-hero-sec {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(255,255,255,0.12);
+      backdrop-filter: blur(8px);
+      color: #fff;
+      font-size: 0.95rem;
+      font-weight: 700;
+      padding: 14px 28px;
+      border-radius: 100px;
+      border: 1.5px solid rgba(255,255,255,0.28);
+      transition: background var(--transition), border-color var(--transition);
+    }
+
+    .btn-hero-sec:hover {
+      background: rgba(255,255,255,0.22);
+      border-color: rgba(255,255,255,0.50);
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    .hero-stat-pill {
+      background: rgba(255,255,255,0.10);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.15);
+      color: rgba(255,255,255,0.88);
+      padding: 9px 20px;
+      border-radius: 100px;
+      font-size: 0.82rem;
+      font-weight: 600;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--accent);
+      color: #fff;
+      font-size: 0.95rem;
+      font-weight: 700;
+      padding: 14px 28px;
+      border-radius: 100px;
+      transition: background var(--transition), transform var(--transition), box-shadow var(--transition);
+      box-shadow: 0 4px 20px rgba(200, 86, 42, 0.3);
+    }
+
+    .btn-primary:hover {
+      background: var(--accent-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 28px rgba(200, 86, 42, 0.4);
+    }
+
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: transparent;
+      color: var(--text-dark);
+      font-size: 0.95rem;
+      font-weight: 700;
+      padding: 14px 28px;
+      border-radius: 100px;
+      border: 2px solid rgba(0,0,0,0.12);
+      transition: border-color var(--transition), background var(--transition);
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--accent);
+      background: var(--accent-light);
+      color: var(--accent);
+    }
+
+    .hero-image-wrap {
+      position: relative;
+    }
+
+    .hero-image-wrap img,
+    .hero-image-wrap > div:first-child {
+      width: 100%;
+      height: 520px;
+      object-fit: cover;
+      border-radius: 24px;
+      transform: rotate(2deg);
+      box-shadow: 12px 20px 60px rgba(200, 86, 42, 0.22), 0 4px 24px rgba(0,0,0,0.10);
+      transition: transform 0.5s ease;
+    }
+
+    .hero-image-wrap:hover img,
+    .hero-image-wrap:hover > div:first-child {
+      transform: rotate(1deg) scale(1.02);
+    }
+
+    .hero-image-badge {
+      position: absolute;
+      bottom: 24px;
+      left: -20px;
+      background: var(--bg-dark);
+      color: #fff;
+      padding: 14px 20px;
+      border-radius: 14px;
+      box-shadow: var(--shadow-md);
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .hero-image-badge .badge-icon {
+      font-size: 1.6rem;
+    }
+
+    .hero-image-badge .badge-text {
+      font-size: 0.78rem;
+      font-weight: 700;
+      line-height: 1.3;
+    }
+
+    .hero-image-badge .badge-text span {
+      display: block;
+      font-size: 1.1rem;
+      color: var(--accent);
+    }
+
+    /* =========================================
+       STATS BAR
+    ========================================= */
+    .stats-bar {
+      background: var(--accent);
+      padding: 36px 0;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0;
+    }
+
+    .stat-item {
+      text-align: center;
+      padding: 8px 24px;
+      position: relative;
+    }
+
+    .stat-item:not(:last-child)::after {
+      content: '';
+      position: absolute;
+      right: 0;
+      top: 10%;
+      height: 80%;
+      width: 1px;
+      background: rgba(255,255,255,0.25);
+    }
+
+    .stat-value {
+      font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+      font-weight: 800;
+      color: #FFFFFF;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+
+    .stat-label {
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: rgba(255,255,255,0.82);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+    }
+
+    /* =========================================
+       PRODUCTOS
+    ========================================= */
+    .productos {
+      background: var(--bg-light);
+      padding: 96px 0;
+    }
+
+    .productos-header {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+
+    .productos-header .section-sub {
+      margin: 0 auto;
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .product-card {
+      background: var(--bg-card);
+      border-radius: var(--radius);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+
+    .product-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .product-card-img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .product-card-body {
+      padding: 24px;
+    }
+
+    .product-card-tag {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--accent);
+      margin-bottom: 8px;
+    }
+
+    .product-card-title {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--text-dark);
+      margin-bottom: 8px;
+    }
+
+    .product-card-desc {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* =========================================
+       PRODUCTOS TABS
+    ========================================= */
+    .tabs-nav {
+      display: flex;
+      gap: 8px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+
+    .tab-btn {
+      padding: 10px 24px;
+      border-radius: 100px;
+      border: 2px solid #DDCBBA;
+      background: transparent;
+      font-family: var(--font);
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: border-color var(--transition), background var(--transition), color var(--transition);
+    }
+
+    .tab-btn.active,
+    .tab-btn:hover {
+      border-color: var(--accent);
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .tab-panel {
+      display: none;
+    }
+
+    .tab-panel.active {
+      display: block;
+    }
+
+    .menu-items-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .menu-item-card {
+      background: var(--bg-white);
+      border-radius: var(--radius);
+      padding: 20px 22px;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 12px;
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+
+    .menu-item-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .menu-item-info {
+      flex: 1;
+    }
+
+    .menu-item-name {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 4px;
+    }
+
+    .menu-item-desc {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    .menu-item-price {
+      font-size: 1.05rem;
+      font-weight: 800;
+      color: var(--accent);
+      white-space: nowrap;
+      flex-shrink: 0;
+    }
+
+    /* Tarjeta destacada de la sección De Temporada: foto grande centrada
+       arriba, nombre/descripción/precio abajo */
+    #tempGrid { display: flex; flex-wrap: wrap; justify-content: center; }
+    #tempGrid .menu-item-card { flex-direction: column; align-items: stretch; text-align: center; width: 100%; max-width: 560px; padding: 0 0 24px; overflow: hidden; }
+    #tempGrid .menu-item-img { width: 100%; height: 320px; object-fit: cover; border-radius: var(--radius) var(--radius) 0 0; margin-bottom: 18px; }
+    #tempGrid .menu-item-info { padding: 0 24px; }
+    #tempGrid .menu-item-name { font-size: 1.4rem; }
+    #tempGrid .menu-item-desc { max-width: 420px; margin: 8px auto 0; font-size: .95rem; }
+    #tempGrid .menu-item-buy { display: flex; justify-content: center; align-items: center; gap: 18px; margin-top: 16px; }
+    #tempGrid .menu-item-price { font-size: 1.5rem; }
+    @media (max-width: 560px) { #tempGrid .menu-item-img { height: 230px; } }
+
+    .menu-item-img { cursor: zoom-in; transition: transform .25s ease, box-shadow .25s ease; }
+    .menu-item-img:hover { transform: scale(1.06); box-shadow: 0 6px 18px rgba(0,0,0,.18); }
+
+    .glr-masonry { columns: 3; column-gap: 16px; }
+    .glr-masonry figure { break-inside: avoid; margin-bottom: 16px; overflow: hidden; position: relative; border-radius: 18px; cursor: zoom-in; box-shadow: 0 6px 20px rgba(0,0,0,.08); }
+    .glr-masonry img { width: 100%; display: block; transition: transform .9s cubic-bezier(.2,.7,.3,1); filter: saturate(1.06) contrast(1.02); }
+    .glr-masonry figure:hover img { transform: scale(1.05); }
+    .glr-wrap { max-height: 1150px; overflow: hidden; position: relative; }
+    .glr-wrap.open { max-height: none; }
+    .glr-fade { position: absolute; left: 0; right: 0; bottom: 0; height: 160px; background: linear-gradient(to top, var(--bg-light), transparent); pointer-events: none; }
+    .glr-wrap.open .glr-fade { display: none; }
+    .glr-btn { display: inline-block; background: var(--accent); color: #fff; font-weight: 800; font-size: 1rem; padding: 14px 36px; border-radius: 100px; border: none; cursor: pointer; font-family: inherit; box-shadow: 0 8px 24px rgba(236,109,74,.3); }
+    @media (max-width: 900px) { .glr-masonry { columns: 2; } }
+    @media (max-width: 560px) { .glr-masonry { column-gap: 10px; } .glr-masonry figure { margin-bottom: 10px; border-radius: 12px; } }
+
+    .pedir-modal {
+      position: fixed; inset: 0; z-index: 280;
+      background: rgba(26, 22, 18, .7);
+      display: none; align-items: center; justify-content: center;
+      padding: 24px; backdrop-filter: blur(3px);
+    }
+    .pedir-modal.on { display: flex; animation: fvIn .2s ease; }
+    .pedir-card {
+      background: #F5EEE1; border-radius: 24px; padding: 34px 30px;
+      max-width: 480px; width: 100%; text-align: center;
+      box-shadow: 0 24px 70px rgba(0,0,0,.4);
+      animation: fvZoom .25s cubic-bezier(.2,.8,.3,1.1);
+      position: relative;
+    }
+    .pedir-card h3 { font-size: 1.5rem; font-weight: 800; margin-bottom: 6px; color: var(--text-dark); }
+    .pedir-card > p { color: var(--text-muted); font-size: .95rem; margin-bottom: 22px; }
+    .pedir-ops { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .pedir-op {
+      background: #fff; border: 2px solid #DDCBBA; border-radius: 18px;
+      padding: 22px 14px; text-decoration: none; transition: all .2s;
+      display: flex; flex-direction: column; align-items: center; gap: 8px;
+    }
+    .pedir-op:hover { border-color: var(--accent); transform: translateY(-3px); box-shadow: 0 10px 24px rgba(236,109,74,.2); }
+    .pedir-op .op-emoji { font-size: 2rem; }
+    .pedir-op .op-title { font-weight: 800; color: var(--text-dark); font-size: 1.02rem; }
+    .pedir-op .op-desc { font-size: .78rem; color: var(--text-muted); line-height: 1.4; }
+    .pedir-cerrar {
+      position: absolute; top: 14px; right: 16px; background: none; border: none;
+      font-size: 22px; color: var(--text-muted); cursor: pointer; line-height: 1;
+    }
+    .pedir-cerrar:hover { color: var(--accent); }
+    .pedir-wa { display: inline-block; margin-top: 18px; font-size: .85rem; color: var(--text-muted); }
+    .pedir-wa a { color: #1fa855; font-weight: 700; }
+    @media (max-width: 480px) { .pedir-ops { grid-template-columns: 1fr; } }
+
+    .foto-visor {
+      position: fixed; inset: 0; z-index: 300;
+      background: rgba(26, 22, 18, .82);
+      display: none; align-items: center; justify-content: center;
+      padding: 24px; cursor: zoom-out;
+      backdrop-filter: blur(3px);
+    }
+    .foto-visor.on { display: flex; animation: fvIn .22s ease; }
+    @keyframes fvIn { from { opacity: 0; } to { opacity: 1; } }
+    .foto-visor figure {
+      max-width: min(680px, 94vw); text-align: center; cursor: default;
+      animation: fvZoom .25s cubic-bezier(.2,.8,.3,1.1);
+    }
+    @keyframes fvZoom { from { transform: scale(.85); opacity: 0; } to { transform: scale(1); opacity: 1; } }
+    .foto-visor img {
+      width: 100%; max-height: 72vh; object-fit: contain;
+      border-radius: 20px; box-shadow: 0 24px 70px rgba(0,0,0,.5);
+      background: #fff;
+    }
+    .foto-visor figcaption {
+      margin-top: 14px; color: #F5EEE1; font-weight: 800; font-size: 1.15rem;
+    }
+    .foto-visor figcaption span { color: #EC6D4A; margin-left: 10px; }
+    .foto-visor .fv-cerrar {
+      position: absolute; top: 18px; right: 22px;
+      background: rgba(255,255,255,.12); border: none; color: #fff;
+      width: 44px; height: 44px; border-radius: 50%;
+      font-size: 22px; cursor: pointer; line-height: 1;
+    }
+    .foto-visor .fv-cerrar:hover { background: #EC6D4A; }
+    .foto-visor .fv-hint { position: absolute; bottom: 18px; left: 0; right: 0; text-align: center; color: rgba(245,238,225,.55); font-size: .78rem; }
+
+    .menu-item-img {
+      width: 72px;
+      height: 72px;
+      border-radius: 12px;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+
+    .menu-item-img-ph {
+      width: 72px;
+      height: 72px;
+      border-radius: 12px;
+      flex-shrink: 0;
+      background: linear-gradient(135deg, var(--accent-light) 0%, #DDCBBA 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.6rem;
+    }
+
+    @media (max-width: 1024px) {
+      .menu-items-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 640px) {
+      .menu-items-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* =========================================
+       HOW IT WORKS
+    ========================================= */
+    .how-it-works {
+      background: var(--bg-white);
+      padding: 96px 0;
+    }
+
+    .how-header {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+
+    .how-header .section-sub {
+      margin: 0 auto;
+    }
+
+    .steps-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 32px;
+      position: relative;
+    }
+
+    .steps-grid::before {
+      content: '';
+      position: absolute;
+      top: 44px;
+      left: 16.6%;
+      right: 16.6%;
+      height: 2px;
+      background: linear-gradient(90deg, var(--accent-light), var(--accent), var(--accent-light));
+      z-index: 0;
+    }
+
+    .step-card {
+      text-align: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .step-icon {
+      width: 88px;
+      height: 88px;
+      border-radius: 50%;
+      background: var(--accent);
+      border: 3px solid var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 20px;
+      position: relative;
+      z-index: 1;
+      box-shadow: 0 10px 24px rgba(236, 109, 74, .35);
+    }
+
+    .step-number {
+      color: #fff;
+      font-size: 2.1rem;
+      font-weight: 800;
+      line-height: 1;
+    }
+
+    .step-title {
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 8px;
+    }
+
+    .step-desc {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* =========================================
+       COTIZADOR
+    ========================================= */
+    .cotizador {
+      background: var(--bg-light);
+      padding: 96px 0;
+    }
+
+    .cotizador-header {
+      text-align: center;
+      margin-bottom: 48px;
+    }
+
+    .cotizador-header .section-sub {
+      margin: 0 auto;
+    }
+
+    .cotizador-card {
+      background: var(--bg-white);
+      border-radius: 24px;
+      box-shadow: var(--shadow-md);
+      padding: 48px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    /* Occasion selector */
+    .cot-section-title {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+    }
+
+    .occasion-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+      margin-bottom: 36px;
+    }
+
+    .occasion-btn {
+      position: relative;
+      cursor: pointer;
+    }
+
+    .occasion-btn input[type="radio"] {
+      position: absolute;
+      opacity: 0;
+      width: 0;
+      height: 0;
+    }
+
+    .occasion-label {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      padding: 14px 10px;
+      border: 2px solid #DDCBBA;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: border-color var(--transition), background var(--transition), box-shadow var(--transition);
+      text-align: center;
+    }
+
+    .occasion-label .occ-emoji {
+      font-size: 1.5rem;
+    }
+
+    .occasion-label .occ-text {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--text-dark);
+      line-height: 1.3;
+    }
+
+    .occasion-btn input:checked + .occasion-label,
+    .occasion-label.active {
+      border-color: var(--accent);
+      background: var(--accent-light);
+      box-shadow: 0 0 0 3px rgba(200, 86, 42, 0.12);
+    }
+
+    /* People slider */
+    .slider-wrap {
+      margin-bottom: 36px;
+    }
+
+    .slider-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+
+    .slider-value {
+      font-size: 1.5rem;
+      font-weight: 800;
+      color: var(--accent);
+    }
+
+    .slider-value span {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-muted);
+    }
+
+    .people-slider {
+      width: 100%;
+      -webkit-appearance: none;
+      height: 6px;
+      border-radius: 100px;
+      background: #DDCBBA;
+      outline: none;
+      cursor: pointer;
+    }
+
+    .people-slider::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 22px;
+      height: 22px;
+      background: var(--accent);
+      border-radius: 50%;
+      cursor: pointer;
+      box-shadow: 0 2px 8px rgba(200, 86, 42, 0.35);
+      transition: transform var(--transition);
+    }
+
+    .people-slider::-webkit-slider-thumb:hover {
+      transform: scale(1.15);
+    }
+
+    .people-slider::-moz-range-thumb {
+      width: 22px;
+      height: 22px;
+      background: var(--accent);
+      border-radius: 50%;
+      cursor: pointer;
+      border: none;
+      box-shadow: 0 2px 8px rgba(200, 86, 42, 0.35);
+    }
+
+    /* Products selector */
+    .products-selector {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      margin-bottom: 36px;
+    }
+
+    .product-row {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      padding: 14px 18px;
+      border: 2px solid #DDCBBA;
+      border-radius: 12px;
+      transition: border-color var(--transition), background var(--transition);
+    }
+
+    .product-row.active {
+      border-color: var(--accent);
+      background: var(--accent-light);
+    }
+
+    .product-row-check {
+      width: 22px;
+      height: 22px;
+      accent-color: var(--accent);
+      cursor: pointer;
+      flex-shrink: 0;
+    }
+
+    .product-row-info {
+      flex: 1;
+    }
+
+    .product-row-name {
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--text-dark);
+    }
+
+    .product-row-price {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+    }
+
+    .qty-control {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity var(--transition);
+    }
+
+    .product-row.active .qty-control {
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    .qty-btn {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      border: 2px solid var(--accent);
+      background: transparent;
+      color: var(--accent);
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background var(--transition), color var(--transition);
+      line-height: 1;
+    }
+
+    .qty-btn:hover {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .qty-num {
+      font-size: 1rem;
+      font-weight: 800;
+      color: var(--text-dark);
+      min-width: 24px;
+      text-align: center;
+    }
+
+    /* Total */
+    .cotizador-total {
+      background: var(--bg-dark);
+      border-radius: 16px;
+      padding: 24px 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+
+    .total-label {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: rgba(255,255,255,0.65);
+    }
+
+    .total-amount {
+      font-size: 2rem;
+      font-weight: 800;
+      color: #FFFFFF;
+    }
+
+    .total-amount span {
+      font-size: 1rem;
+      font-weight: 600;
+      color: rgba(255,255,255,0.6);
+    }
+
+    .btn-whatsapp-cot {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #25D366;
+      color: #fff;
+      font-size: 0.92rem;
+      font-weight: 700;
+      padding: 14px 24px;
+      border-radius: 100px;
+      transition: background var(--transition), transform var(--transition);
+      border: none;
+      cursor: pointer;
+      box-shadow: 0 4px 16px rgba(37, 211, 102, 0.3);
+    }
+
+    .btn-whatsapp-cot:hover {
+      background: #1fba58;
+      transform: translateY(-2px);
+    }
+
+    /* =========================================
+       GALLERY / CONGELADOS
+    ========================================= */
+    .gallery-section {
+      background: var(--bg-white);
+      padding: 80px 0;
+    }
+
+    .gallery-inner {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 64px;
+      align-items: center;
+    }
+
+    .gallery-image-wrap img {
+      width: 100%;
+      height: 420px;
+      object-fit: cover;
+      border-radius: 24px;
+      box-shadow: var(--shadow-lg);
+    }
+
+    .gallery-content .section-sub {
+      margin-bottom: 28px;
+    }
+
+    .feature-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .feature-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      font-size: 0.95rem;
+      color: var(--text-dark);
+    }
+
+    .feature-icon {
+      width: 32px;
+      height: 32px;
+      background: var(--green-light);
+      color: var(--green);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.85rem;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .feature-item strong {
+      display: block;
+      font-weight: 700;
+    }
+
+    .feature-item p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    /* =========================================
+       TESTIMONIALS
+    ========================================= */
+    .testimonials {
+      background: var(--bg-light);
+      padding: 96px 0;
+    }
+
+    .testimonials-header {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+
+    .testimonials-header .section-sub {
+      margin: 0 auto;
+    }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+
+    .testimonial-card {
+      background: var(--bg-white);
+      border-radius: var(--radius);
+      padding: 28px;
+      box-shadow: var(--shadow-sm);
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+
+    .testimonial-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+    }
+
+    .testimonial-stars {
+      display: flex;
+      gap: 3px;
+      margin-bottom: 14px;
+    }
+
+    .testimonial-stars span {
+      color: #EC6D4A;
+      font-size: 1rem;
+    }
+
+    .testimonial-text {
+      font-size: 0.92rem;
+      color: var(--text-dark);
+      line-height: 1.7;
+      margin-bottom: 20px;
+      font-style: italic;
+    }
+
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .author-avatar {
+      width: 38px;
+      height: 38px;
+      background: var(--accent-light);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--accent);
+      flex-shrink: 0;
+    }
+
+    .author-name {
+      font-weight: 700;
+      font-size: 0.88rem;
+      color: var(--text-dark);
+    }
+
+    .author-loc {
+      font-size: 0.75rem;
+      color: var(--text-muted);
+    }
+
+    /* =========================================
+       FOOTER
+    ========================================= */
+    .footer {
+      background: var(--bg-dark);
+      padding: 64px 0 36px;
+    }
+
+    .footer-inner {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr;
+      gap: 48px;
+      padding-bottom: 48px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .footer-brand .footer-logo-main {
+      font-family: 'Americana', var(--font);
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #fff;
+      width: fit-content;
+      text-align: center;
+    }
+
+    .footer-brand .footer-logo-sub {
+      font-family: 'Americana', var(--font);
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 14px;
+    }
+
+    .footer-brand p {
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.55);
+      line-height: 1.7;
+      max-width: 260px;
+    }
+
+    .footer-col-title {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: rgba(255,255,255,0.4);
+      margin-bottom: 16px;
+    }
+
+    .footer-col-links {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .footer-col-links a {
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.65);
+      transition: color var(--transition);
+    }
+
+    .footer-col-links a:hover {
+      color: #fff;
+    }
+
+    .footer-social {
+      display: flex;
+      gap: 10px;
+      margin-top: 20px;
+    }
+
+    .social-btn {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      background: rgba(255,255,255,0.08);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1rem;
+      color: rgba(255,255,255,0.65);
+      transition: background var(--transition), color var(--transition);
+    }
+
+    .social-btn:hover {
+      background: var(--accent);
+      color: #fff;
+    }
+
+    .footer-bottom {
+      padding-top: 28px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .footer-bottom p {
+      font-size: 0.8rem;
+      color: rgba(255,255,255,0.35);
+    }
+
+    .footer-bottom a {
+      color: var(--accent);
+    }
+
+    /* =========================================
+       FLOATING WHATSAPP
+    ========================================= */
+    .wa-float {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      z-index: 999;
+      width: 58px;
+      height: 58px;
+      background: #25D366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 24px rgba(37, 211, 102, 0.45);
+      transition: transform var(--transition), box-shadow var(--transition);
+    }
+
+    .wa-float:hover {
+      transform: scale(1.1) translateY(-2px);
+      box-shadow: 0 10px 32px rgba(37, 211, 102, 0.55);
+    }
+
+    .wa-float svg {
+      width: 30px;
+      height: 30px;
+      fill: #fff;
+    }
+
+    .wa-pulse {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 16px;
+      height: 16px;
+      background: #D4502F;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      animation: pulse-dot 2s ease-in-out infinite;
+    }
+
+    @keyframes pulse-dot {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+    }
+
+    /* =========================================
+       RESPONSIVE
+    ========================================= */
+    @media (max-width: 1024px) {
+      .products-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .testimonials-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .occasion-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links, .nav-cta {
+        display: none;
+      }
+
+      .nav-hamburger {
+        display: flex;
+      }
+
+      .hero {
+        min-height: 85vh;
+        align-items: flex-end;
+      }
+
+      .hero-inner {
+        padding-bottom: 56px;
+        padding-top: 100px;
+      }
+
+      .hero-title {
+        font-size: clamp(2.2rem, 6vw, 3rem);
+      }
+
+      .stats-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+
+      .stat-item::after {
+        display: none;
+      }
+
+      .products-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .steps-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+      }
+
+      .steps-grid::before {
+        display: none;
+      }
+
+      .gallery-inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .testimonials-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .cotizador-card {
+        padding: 28px 20px;
+      }
+
+      .cotizador-total {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .footer-inner {
+        grid-template-columns: 1fr;
+        gap: 36px;
+      }
+
+      .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .hero {
+        min-height: 88svh;
+      }
+
+      .hero-title {
+        font-size: 2.1rem;
+      }
+
+      .hero-actions {
+        flex-direction: column;
+      }
+
+      .btn-primary, .btn-secondary, .btn-hero-sec {
+        justify-content: center;
+        width: 100%;
+      }
+
+      .hero-stats {
+        gap: 8px;
+      }
+
+      .occasion-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    /* =========================================
+       CARRITO
+    ========================================= */
+    .menu-item-buy { display: flex; flex-direction: column; align-items: flex-end; gap: 8px; flex-shrink: 0; }
+    .btn-agregar { border: 2px solid var(--accent); background: transparent; color: var(--accent); font-family: var(--font); font-size: .75rem; font-weight: 700; padding: 6px 14px; border-radius: 100px; cursor: pointer; transition: background var(--transition), color var(--transition); white-space: nowrap; }
+    .btn-agregar:hover { background: var(--accent); color: #fff; }
+
+    .cart-float { position: fixed; bottom: 100px; right: 28px; z-index: 998; width: 58px; height: 58px; border-radius: 50%; border: none; background: var(--bg-dark); color: #fff; font-size: 1.5rem; cursor: pointer; box-shadow: 0 6px 24px rgba(0,0,0,.35); display: flex; align-items: center; justify-content: center; transition: transform var(--transition); }
+    .cart-float:hover { transform: scale(1.1) translateY(-2px); }
+    .cart-badge { position: absolute; top: -4px; right: -4px; min-width: 22px; height: 22px; padding: 0 6px; background: var(--accent); color: #fff; font-size: .72rem; font-weight: 800; border-radius: 100px; display: flex; align-items: center; justify-content: center; border: 2px solid #fff; }
+
+    .cart-overlay { position: fixed; inset: 0; background: rgba(0,0,0,.45); z-index: 1000; opacity: 0; pointer-events: none; transition: opacity var(--transition); }
+    .cart-overlay.open { opacity: 1; pointer-events: all; }
+    .cart-drawer { position: fixed; top: 0; right: 0; bottom: 0; width: min(420px, 100vw); background: #fff; z-index: 1001; transform: translateX(105%); transition: transform var(--transition); display: flex; flex-direction: column; box-shadow: -12px 0 40px rgba(0,0,0,.18); }
+    .cart-drawer.open { transform: translateX(0); }
+    .cart-head { display: flex; align-items: center; justify-content: space-between; padding: 20px 24px; border-bottom: 1px solid #EDE4D2; }
+    .cart-head h3 { font-size: 1.2rem; font-weight: 800; }
+    .cart-close { border: none; background: transparent; font-size: 1.8rem; line-height: 1; cursor: pointer; color: var(--text-muted); }
+    .cart-body { flex: 1; overflow-y: auto; display: flex; flex-direction: column; }
+    .cart-items { padding: 16px 24px; }
+    .cart-empty { text-align: center; color: var(--text-muted); font-size: .95rem; padding: 48px 0; line-height: 2; }
+    .cart-item { display: flex; align-items: center; gap: 12px; padding: 12px 0; border-bottom: 1px solid #EDE4D2; }
+    .cart-item-info { flex: 1; }
+    .cart-item-name { font-size: .88rem; font-weight: 700; }
+    .cart-item-price { font-size: .75rem; color: var(--text-muted); }
+    .cart-item-qty { display: flex; align-items: center; gap: 8px; }
+    .cart-item-sub { font-size: .9rem; color: var(--accent); min-width: 56px; text-align: right; }
+    .cart-foot { padding: 18px 24px 22px; border-top: 1px solid #EDE4D2; background: var(--bg-light); }
+    .cart-zone { width: 100%; padding: 11px 12px; border: 2px solid #DDCBBA; border-radius: 12px; font-family: var(--font); font-size: .85rem; font-weight: 600; color: var(--text-dark); background: #fff; margin-bottom: 14px; }
+    .cart-total-row { display: flex; justify-content: space-between; align-items: center; margin-bottom: 14px; font-size: .9rem; font-weight: 600; color: var(--text-muted); }
+    .cart-total-row strong { font-size: 1.4rem; font-weight: 800; color: var(--text-dark); }
+    .btn-mp { width: 100%; border: none; background: #009EE3; color: #fff; font-family: var(--font); font-size: .95rem; font-weight: 700; padding: 14px 20px; border-radius: 100px; cursor: pointer; transition: background var(--transition), transform var(--transition); box-shadow: 0 4px 16px rgba(0,158,227,.3); }
+    .btn-mp:hover:not(:disabled) { background: #0087c2; transform: translateY(-2px); }
+    .btn-mp:disabled { opacity: .55; cursor: not-allowed; }
+    .cart-hint { font-size: .8rem; color: var(--text-muted); margin-top: 10px; line-height: 1.5; }
+    .cart-hint a { color: var(--accent); font-weight: 700; text-decoration: underline; }
+    .cart-hint-warn { color: #D4502F; }
+    .cart-note { font-size: .75rem; color: var(--text-muted); margin-top: 14px; padding-top: 12px; border-top: 1px dashed #DDCBBA; line-height: 1.5; }
+    .cart-note a { color: var(--accent); font-weight: 700; }
+    .pago-banner { position: fixed; top: 80px; left: 50%; transform: translateX(-50%); z-index: 1002; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 12px; width: min(560px, calc(100vw - 32px)); padding: 14px 44px 14px 18px; border-radius: 14px; font-size: .88rem; font-weight: 600; box-shadow: var(--shadow-md); }
+    .pago-banner > span { flex: 1 1 100%; text-align: center; line-height: 1.5; }
+    .pago-banner > button { position: absolute; top: 8px; right: 10px; }
+    .pago-banner.ok { background: #EBEBDF; color: #6B6A52; border: 1px solid #B4B39C; }
+    .pago-banner.warn { background: #F9E2D8; color: #D4502F; border: 1px solid #DDCBBA; }
+    .pago-banner.err { background: #F9E2D8; color: #D4502F; border: 1px solid #DDCBBA; }
+    .pago-banner button { border: none; background: transparent; font-size: 1.2rem; cursor: pointer; color: inherit; line-height: 1; }
+
+    @media (max-width: 640px) {
+      .menu-item-card { flex-wrap: wrap; }
+      .menu-item-buy { flex-direction: row; width: 100%; justify-content: space-between; align-items: center; }
+      .cart-float { bottom: 96px; right: 24px; }
+    }
+  </style>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FoodEstablishment",
+  "name": "Lappe Cocina",
+  "description": "Comida casera congelada empaquetada al alto vacío, lista en 10 minutos. Entrega a domicilio en CDMX.",
+  "url": "https://lappecocina.com/",
+  "image": "https://lappecocina.com/og-lappe.jpg",
+  "servesCuisine": "Mexicana",
+  "telephone": "+52 55 3854 6333",
+  "email": "lappesabor@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Ciudad de México",
+    "addressRegion": "CDMX",
+    "addressCountry": "MX"
+  },
+  "areaServed": "Ciudad de México y zona poniente del Estado de México",
+  "sameAs": ["https://www.instagram.com/lappecocina"],
+  "priceRange": "$$",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Productos congelados",
+    "itemListElement": [
+      { "@type": "Product", "name": "Quesadillas (10 piezas)", "image": "https://lappecocina.com/lappe-quesadillas.jpg", "description": "Quesadillas congeladas de chicharrón prensado, queso u hongos, empacadas al alto vacío.", "offers": { "@type": "Offer", "price": "345", "priceCurrency": "MXN", "availability": "https://schema.org/InStock", "url": "https://lappecocina.com/#productos" } },
+      { "@type": "Product", "name": "Cochinita pibil (1 kg)", "image": "https://lappecocina.com/lappe-cochinita.jpg", "description": "Cochinita pibil tradicional congelada, con cebolla morada y habanero, empacada al alto vacío.", "offers": { "@type": "Offer", "price": "530", "priceCurrency": "MXN", "availability": "https://schema.org/InStock", "url": "https://lappecocina.com/#productos" } },
+      { "@type": "Product", "name": "Carne al pastor", "image": "https://lappecocina.com/lappe-pastor.jpg", "description": "Carne al pastor marinada y congelada, lista para calentar y servir en tacos.", "offers": { "@type": "Offer", "price": "595", "priceCurrency": "MXN", "availability": "https://schema.org/InStock", "url": "https://lappecocina.com/#productos" } },
+      { "@type": "Product", "name": "Lasagna (6 personas)", "image": "https://lappecocina.com/lappe-lasagna.jpg", "description": "Lasagna casera congelada para 6 personas: bolognesa, poblana, vegetariana o de chicharrón.", "offers": { "@type": "Offer", "price": "715", "priceCurrency": "MXN", "availability": "https://schema.org/InStock", "url": "https://lappecocina.com/#productos" } }
+    ]
+  }
+}
+</script>
+</head>
+<body>
+
+  <!-- ======================================
+       NAVIGATION
+  ====================================== -->
+  <nav class="nav">
+    <div class="container">
+      <div class="nav-inner">
+        <a href="index.html#" class="nav-logo">
+          <span class="nav-logo-main">LAPPE</span>
+          <span class="nav-logo-sub">cocina</span>
+        </a>
+        <ul class="nav-links">
+          <li><a href="index.html#por-que-lappe">Por qué Lappe</a></li>
+          <li><a href="index.html#como-funciona">Cómo funciona</a></li>
+          <li><a href="index.html#productos">Productos</a></li>
+          <li><a href="index.html#menu-semanal">Menú Semanal</a></li>
+          <li><a href="index.html#envios">Zona</a></li>
+          <li><a href="index.html#testimonios">Testimonios</a></li>
+          <li><a href="index.html#galeria">Galería</a></li>
+        </ul>
+        <a href="index.html#" class="nav-cta" onclick="abrirPedir(event)">
+          Pedir ahora
+</a>
+        <div class="nav-hamburger" id="hamburger" aria-label="Menu" role="button" tabindex="0">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="index.html#por-que-lappe" onclick="closeMenu()">Por qué Lappe</a>
+      <a href="index.html#como-funciona" onclick="closeMenu()">Cómo funciona</a>
+      <a href="index.html#productos" onclick="closeMenu()">Productos</a>
+      <a href="index.html#menu-semanal" onclick="closeMenu()">Menú Semanal</a>
+      <a href="index.html#envios" onclick="closeMenu()">Zona</a>
+      <a href="index.html#testimonios" onclick="closeMenu()">Testimonios</a>
+      <a href="index.html#galeria" onclick="closeMenu()">Galería</a>
+      <a href="index.html#" class="nav-cta" onclick="closeMenu(); abrirPedir(event)">Pedir ahora</a>
+    </div>
+  </nav>
+
+  <!-- ======================================
+       HERO
+  ====================================== -->
+  <section class="hero" id="inicio">
+    <img class="hero-bg-img hero-slide on" src="lappe-hero.jpg" alt="" aria-hidden="true" />
+    <img class="hero-bg-img hero-slide" src="hero-carousel-3.jpg" alt="" aria-hidden="true" />
+    <img class="hero-bg-img hero-slide" src="hero-carousel-1.jpg" alt="" aria-hidden="true" />
+    <img class="hero-bg-img hero-slide" src="hero-carousel-5.jpg" alt="" aria-hidden="true" />
+    <div class="hero-overlay"></div>
+    <div class="container hero-inner">
+      <div class="hero-grid fade-up">
+        <div class="hero-badge">Listo en 10 minutos</div>
+        <h1 class="hero-title">
+          La comida <span>de siempre</span>,<br>sin complicaciones
+        </h1>
+        <p class="hero-sub">
+          Comida congelada empaquetada al alto vacío. Lista para calentar y disfrutar con tu familia, sin horas en la cocina.
+        </p>
+        <div class="hero-actions">
+          <a href="index.html#" class="btn-primary" onclick="abrirPedir(event)">Hacer pedido</a>
+        </div>
+        <div class="hero-stats">
+          <div class="hero-stat-pill">⚡ Listo en 10 min</div>
+          <div class="hero-stat-pill">📦 Empaque al alto vacío</div>
+          <div class="hero-stat-pill">🏙️ Entrega CDMX</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================================
+       STATS BAR
+  ====================================== -->
+  <section class="stats-bar">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-item fade-up">
+          <div class="stat-value">10 min</div>
+          <div class="stat-label">Listo en la mesa</div>
+        </div>
+        <div class="stat-item fade-up" style="transition-delay: 0.1s;">
+          <div class="stat-value">Alto Vacío</div>
+          <div class="stat-label">Empaque profesional</div>
+        </div>
+        <div class="stat-item fade-up" style="transition-delay: 0.2s;">
+          <div class="stat-value">CDMX</div>
+          <div class="stat-label">A tu puerta</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="gallery-section" id="por-que-lappe">
+    <div class="container">
+      <div class="gallery-inner">
+        <div class="gallery-image-wrap fade-up">
+          <img src="lappe-gallery.jpg" alt="Lappe — kit de tacos al pastor con todos los complementos" style="width:100%;height:420px;border-radius:24px;box-shadow:0 20px 60px rgba(0,0,0,0.15);object-fit:cover;" />
+        </div>
+        <div class="gallery-content fade-up" style="transition-delay: 0.15s;">
+          <span class="section-label">Por qué Lappe</span>
+          <h2 class="section-heading">Calidad que se nota en cada bocado</h2>
+          <p class="section-sub" style="margin-bottom: 28px;">Nuestro proceso de empaque al alto vacío conserva los sabores, texturas y nutrientes de cada platillo como si acabara de salir de la cocina.</p>
+          <ul class="feature-list">
+            <li class="feature-item">
+              <div class="feature-icon">&#10003;</div>
+              <div>
+                <strong>Empaque al alto vacío</strong>
+                <p>Tecnología profesional que preserva frescura hasta 6 meses en congelación.</p>
+              </div>
+            </li>
+            <li class="feature-item">
+              <div class="feature-icon">&#10003;</div>
+              <div>
+                <strong>Sin conservadores artificiales</strong>
+                <p>Solo ingredientes naturales y recetas de casa para el sabor de siempre.</p>
+              </div>
+            </li>
+            <li class="feature-item">
+              <div class="feature-icon">&#10003;</div>
+              <div>
+                <strong>Ideal para eventos y reuniones</strong>
+                <p>Pedidos a granel con entrega a domicilio en toda la CDMX.</p>
+              </div>
+            </li>
+            <li class="feature-item">
+              <div class="feature-icon">&#10003;</div>
+              <div>
+                <strong>Menú semanal disponible</strong>
+                <p>Suscríbete a nuestro menú y nunca te quedes sin qué comer entre semana.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="how-it-works" id="como-funciona">
+    <div class="container">
+      <div class="how-header fade-up">
+        <span class="section-label">El proceso</span>
+        <h2 class="section-heading">Tan fácil como 1, 2, 3</h2>
+        <p class="section-sub">Sin complicaciones. Tú solo eliges, nosotros preparamos y tú calientas.</p>
+      </div>
+      <div class="steps-grid">
+        <div class="step-card fade-up">
+          <div class="step-icon">
+            <div class="step-number">1</div>
+          </div>
+          <h3 class="step-title">Elige tu pedido</h3>
+          <p class="step-desc">Elige tus platillos en la tienda o arma tu menú semanal, y paga en línea de forma segura.</p>
+        </div>
+        <div class="step-card fade-up" style="transition-delay: 0.12s;">
+          <div class="step-icon">
+            <div class="step-number">2</div>
+          </div>
+          <h3 class="step-title">Lo recibimos y empacamos</h3>
+          <p class="step-desc">Preparamos tu pedido con ingredientes frescos y lo empacamos al alto vacío para que llegue en perfecto estado.</p>
+        </div>
+        <div class="step-card fade-up" style="transition-delay: 0.24s;">
+          <div class="step-icon">
+            <div class="step-number">3</div>
+          </div>
+          <h3 class="step-title">Calienta y disfruta</h3>
+          <p class="step-desc">En menos de 10 minutos en el sartén, comal o microondas. Listo para comer sin ensuciar casi nada.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="productos" id="productos">
+    <div class="container">
+      <div class="productos-header fade-up">
+        <span class="section-label">Menú</span>
+        <h2 class="section-heading">Lo que tenemos para ti</h2>
+        <p class="section-sub">Todos nuestros platillos están preparados con ingredientes frescos y empacados al alto vacío para que conserven todo su sabor.</p>
+      </div>
+
+      <!-- Tab navigation -->
+      <div class="tabs-nav fade-up" role="tablist" aria-label="Categorías del menú">
+        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-temporada" id="btn-temporada" onclick="switchTab('temporada')" style="display:none;">🌟 De Temporada</button>
+        <button class="tab-btn active" role="tab" aria-selected="true" aria-controls="tab-antojitos" id="btn-antojitos" onclick="switchTab('antojitos')">Antojitos Mexicanos</button>
+        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-sorprender" id="btn-sorprender" onclick="switchTab('sorprender')">Para Sorprender</button>
+        <button class="tab-btn" role="tab" aria-selected="false" aria-controls="tab-apuro" id="btn-apuro" onclick="switchTab('apuro')">Para el Apuro</button>
+      </div>
+
+      <!-- Tab: Antojitos Mexicanos -->
+      <div class="tab-panel active fade-up" id="tab-antojitos" role="tabpanel" aria-labelledby="btn-antojitos">
+        <div class="menu-items-grid">
+          <div class="menu-item-card">
+            <img class="menu-item-img" src="lappe-quesadillas.jpg" alt="Quesadillas Lappe" />
+            <div class="menu-item-info">
+              <p class="menu-item-name">Quesadillas</p>
+              <p class="menu-item-desc">Chicharrón prensado, queso u hongos &middot; 10 pzas. listas para freír</p>
+            </div>
+            <span class="menu-item-price">$345</span>
+          </div>
+          <div class="menu-item-card">
+            <img class="menu-item-img" src="lappe-pastor-arabe.jpg" alt="Pastor árabe Lappe" />
+            <div class="menu-item-info">
+              <p class="menu-item-name">Pastor árabe</p>
+              <p class="menu-item-desc">Pepinos, jocoque, hierbabuena, chipotle y pan pita</p>
+            </div>
+            <span class="menu-item-price">$510</span>
+          </div>
+          <div class="menu-item-card">
+            <img class="menu-item-img" src="lappe-cochinita.jpg" alt="Cochinita pibil Lappe" />
+            <div class="menu-item-info">
+              <p class="menu-item-name">Cochinita pibil</p>
+              <p class="menu-item-desc">Pierna de cerdo, cebolla morada y habanero &middot; 1 kg</p>
+            </div>
+            <span class="menu-item-price">$530</span>
+          </div>
+          <div class="menu-item-card">
+            <img class="menu-item-img" src="lappe-chicharron.jpg" alt="Chicharrón en salsa Lappe" />
+            <div class="menu-item-info">
+              <p class="menu-item-name">Chicharrón en salsa</p>
+              <p class="menu-item-desc">Roja o verde</p>
+            </div>
+            <span class="menu-item-price">$535</span>
+          </div>
+          <div class="menu-item-card">
+            <img class="menu-item-img" src="lappe-pastor.jpg" alt="Carne al pastor Lappe" />
+            <div class="menu-item-info">
+              <p class="menu-item-name">Carne al pastor</p>
+              <p class="menu-item-desc">Del trompo, con salsas y tortillas</p>
+            </div>
+            <span class="menu-item-price">$595</span>
+          </div>
+          <div class="menu-item-card">
+            <img class="menu-item-img" src="lappe-carne-jugo.jpg" alt="Carne en su jugo Lappe" />
+            <div class="menu-item-info">
+              <p class="menu-item-name">Carne en su jugo</p>
+              <p class="menu-item-desc">Con frijoles de olla</p>
+            </div>
+            <span class="menu-item-price">$610</span>
+          </div>
+          <div class="menu-item-card">
+            <img class="menu-item-img" src="lappe-campechana.jpg" alt="Tacos campechanos Lappe" />
+            <div class="menu-item-info">
+              <p class="menu-item-name">Tacos campechanos</p>
+              <p class="menu-item-desc">Cecina de Yecapixtla, longaniza y chicharrón</p>
+            </div>
+            <span class="menu-item-price">$595</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab: Para Sorprender -->
+      <div class="tab-panel fade-up" id="tab-sorprender" role="tabpanel" aria-labelledby="btn-sorprender">
+        <div class="menu-items-grid">
+          <div class="menu-item-card">
+            <img class="menu-item-img" src="lappe-quiches.jpg" alt="Quiches Lappe" />
+            <div class="menu-item-info">
+              <p class="menu-item-name">Quiches</p>
+              <p class="menu-item-desc">Lorraine, espinacas o espárragos &middot; 6 porciones</p>
+            </div>
+            <span class="menu-item-price">$445</span>
+          </div>
+          <div class="menu-item-card">
+            <img class="menu-item-img" src="lappe-lasagna.jpg" alt="Lasagna Lappe" />
+            <div class="menu-item-info">
+              <p class="menu-item-name">Lasagna</p>
+              <p class="menu-item-desc">Bolognesa, poblana, vegetariana o chicharrón &middot; 6 personas</p>
+            </div>
+            <span class="menu-item-price">$715</span>
+          </div>
+          <div class="menu-item-card">
+            <img class="menu-item-img" src="lappe-ravioles.jpg" alt="Ravioles Lappe" />
+            <div class="menu-item-info">
+              <p class="menu-item-name">Ravioles</p>
+              <p class="menu-item-desc">Relleno de queso o carne &middot; salsa 4 quesos, pomodoro o pesto &middot; 6 personas</p>
+            </div>
+            <span class="menu-item-price">$485</span>
+          </div>
+          <div class="menu-item-card">
+            <img class="menu-item-img" src="lappe-crepas.jpg" alt="Crepas Lappe" />
+            <div class="menu-item-info">
+              <p class="menu-item-name">Crepas</p>
+              <p class="menu-item-desc">Chicharrón, pollo u hongos &middot; salsa blanca, roja o poblana &middot; 12 piezas</p>
+            </div>
+            <span class="menu-item-price">$495</span>
+          </div>
+          <div class="menu-item-card">
+            <img class="menu-item-img" src="lappe-roscas.jpg" alt="Roscas Lappe" id="roscaFoto" data-fotos="lappe-roscas.jpg,lappe-tamales.jpg" />
+            <div class="menu-item-info">
+              <p class="menu-item-name">Roscas</p>
+              <p class="menu-item-desc">De tamal verde o de elote con salsa roja y rajas poblanas</p>
+            </div>
+            <span class="menu-item-price">$450</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab: Para el Apuro -->
+      <div class="tab-panel fade-up" id="tab-temporada" role="tabpanel" aria-labelledby="btn-temporada">
+        <p id="tempHook" style="display:none;text-align:center;font-weight:800;color:var(--accent-hover);font-size:1.1rem;margin:0 0 14px;line-height:1.5;"></p>
+        <p id="tempCond" style="display:none;text-align:center;color:var(--text-dark);font-size:.92rem;font-weight:800;margin:0 0 22px;line-height:1.6;"></p>
+        <div class="menu-items-grid" id="tempGrid"></div>
+      </div>
+      <div class="tab-panel fade-up" id="tab-apuro" role="tabpanel" aria-labelledby="btn-apuro">
+        <div class="menu-items-grid">
+          <div class="menu-item-card">
+            <img class="menu-item-img" src="lappe-salsas-gourmet.jpg" alt="Salsas gourmet Lappe" />
+            <div class="menu-item-info">
+              <p class="menu-item-name">Salsas gourmet</p>
+              <p class="menu-item-desc">Blanca, cuatro quesos o arrabiata &middot; 1 L</p>
+            </div>
+            <span class="menu-item-price">$310</span>
+          </div>
+          <div class="menu-item-card">
+            <img class="menu-item-img" src="lappe-salsa-verde.jpg" alt="Salsas mexicanas Lappe" />
+            <div class="menu-item-info">
+              <p class="menu-item-name">Salsas mexicanas</p>
+              <p class="menu-item-desc">Roja, verde o poblana &middot; 1 L</p>
+            </div>
+            <span class="menu-item-price">$225</span>
+          </div>
+          <div class="menu-item-card">
+            <img class="menu-item-img" src="lappe-mini-tacos.jpg" alt="Mini tacos Lappe" />
+            <div class="menu-item-info">
+              <p class="menu-item-name">Mini tacos</p>
+              <p class="menu-item-desc">Carne o pollo &middot; 12 piezas</p>
+            </div>
+            <span class="menu-item-price">$165</span>
+          </div>
+          <div class="menu-item-card">
+            <img class="menu-item-img" src="lappe-tequenos.jpg" alt="Tequeños de queso Lappe" />
+            <div class="menu-item-info">
+              <p class="menu-item-name">Tequeños de queso</p>
+              <p class="menu-item-desc">12 piezas, listos para freír</p>
+            </div>
+            <span class="menu-item-price">$360</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MENÚ SEMANAL -->
+    <section id="menu-semanal" style="padding: 80px 24px; background: #F5EEE1;">
+      <div class="container">
+        <div style="text-align:center;margin-bottom:44px;">
+          <span id="msBadgeSemana" style="display:inline-block;background:#F9E2D8;color:#D4502F;font-weight:800;font-size:clamp(1.05rem, 3.5vw, 1.3rem);letter-spacing:.08em;text-transform:uppercase;padding:14px 28px;border-radius:100px;margin-bottom:20px;line-height:1.4;">📦 Menú Semanal</span>
+          <h2 class="section-heading" style="color:#EC6D4A;">Haz tu pedido<br>fácil y rápido</h2>
+          <p style="font-size:1.1rem;color:#8A8A7A;max-width:560px;margin:0 auto 20px;line-height:1.6;">Comida empacada al alto vacío. Entrega domingos y lunes en CDMX.</p>
+          <span id="msFechas" style="display:inline-block;background:#fff;border:1.5px solid #DDCBBA;color:#D4502F;font-weight:700;font-size:.95rem;padding:11px 22px;border-radius:100px;">⏰ Cargando fechas...</span>
+        </div>
+
+        <div style="max-width:720px;margin:0 auto;">
+
+          <!-- PAGO CONFIRMADO (regreso de Mercado Pago) -->
+          <div id="msPagado" style="display:none;background:#EBEBDF;border:2px solid #B4B39C;border-radius:16px;padding:18px 22px;margin-bottom:24px;text-align:center;font-weight:700;color:#6B6A52;"></div>
+
+          <!-- ÉXITO fallback (solo si el checkout directo no está disponible) -->
+          <div id="msExito" style="display:none;background:#fff;border-radius:20px;box-shadow:0 8px 32px rgba(0,0,0,0.08);padding:34px 28px;text-align:center;margin-bottom:24px;">
+            <div style="font-size:44px;">🎉</div>
+            <h3 style="font-size:1.4rem;font-weight:800;margin:8px 0 6px;">¡Pedido registrado!</h3>
+            <p style="color:#8A8A7A;font-size:14px;margin:0 0 18px;">Tu pedido ya quedó guardado. Completa tu pago para confirmarlo.</p>
+            <div style="background:linear-gradient(135deg,#D4502F,#EC6D4A);border-radius:18px;padding:22px 30px;margin-bottom:16px;display:block;box-shadow:0 10px 30px rgba(236,109,74,.35);">
+              <div style="color:rgba(255,255,255,.85);font-size:12px;letter-spacing:3px;text-transform:uppercase;font-weight:800;">Tu número de pedido</div>
+              <div id="msExitoFolio" style="color:#fff;font-size:clamp(2.4rem, 9vw, 3.4rem);font-weight:800;letter-spacing:5px;line-height:1.15;"></div>
+            </div>
+            <div id="msExitoTotal" style="font-size:1.5rem;font-weight:800;color:#EC6D4A;margin-bottom:16px;"></div>
+            <div style="display:flex;gap:12px;align-items:flex-start;background:#F9E2D8;border:1.5px solid rgba(236,109,74,.4);border-radius:14px;padding:14px 16px;margin-bottom:14px;font-size:13.5px;color:#D4502F;line-height:1.6;text-align:left;">
+              <span style="font-size:20px;flex-shrink:0;">⏰</span>
+              <span>El pago debe realizarse a más tardar el <strong class="ms-pago-fecha">jueves</strong> 8:00 pm. En caso de no recibirse en ese plazo, lamentablemente no podremos procesar tu pedido.</span>
+            </div>
+            <a id="msExitoMP" href="index.html#" target="_blank" rel="noopener" style="display:flex;align-items:center;justify-content:center;gap:10px;background:#009ee3;color:#fff;padding:15px;border-radius:12px;font-size:16px;font-weight:800;text-decoration:none;margin-bottom:10px;">💳 Pagar con Mercado Pago</a>
+            <p id="msExitoNota" style="font-size:12.5px;color:#8A8A7A;margin:0 0 16px;">Al pagar, escribe tu <strong>folio</strong> como referencia del pago.</p>
+            <p id="msExitoCuenta" style="display:none;font-size:13px;color:#D4502F;font-weight:700;margin:0 0 16px;"></p>
+            <div id="msExitoComprobante" style="background:#fff;border:1.5px solid #DDCBBA;border-radius:16px;padding:20px 18px;">
+              <div style="font-size:26px;">💬</div>
+              <p style="font-size:14px;color:#8A8A7A;margin:8px 0 14px;line-height:1.6;">Por favor envía tu <strong>comprobante de pago</strong> por WhatsApp para confirmar tu orden:</p>
+              <a id="msExitoWA" href="index.html#" target="_blank" rel="noopener" style="display:block;background:#E9F5EB;border:1.5px solid #BFDCC4;color:#EC6D4A;font-weight:800;font-size:1.35rem;padding:13px;border-radius:100px;text-decoration:none;">📱 +52 55 3854 6333</a>
+              <p style="font-size:12.5px;color:#8A8A7A;margin:14px 0 0;line-height:1.6;">Indica tu número de pedido en el mensaje. ¡Estate al pendiente, nos pondremos en contacto para notificarte sobre el envío!</p>
+            </div>
+          </div>
+
+          <!-- CERRADO -->
+          <div id="msCerrado" style="display:none;background:#fff;border-radius:20px;box-shadow:0 8px 32px rgba(0,0,0,0.08);padding:34px 28px;text-align:center;margin-bottom:24px;">
+            <div style="font-size:44px;">🕗</div>
+            <h3 style="font-size:1.35rem;font-weight:800;margin:8px 0 6px;">Pedidos cerrados por esta semana</h3>
+            <p id="msCerradoTxt" style="color:#8A8A7A;font-size:14.5px;margin:0 0 6px;line-height:1.6;">El cierre fue el miércoles a las 8:00 pm.</p>
+            <p style="color:#8A8A7A;font-size:14.5px;margin:0 0 20px;line-height:1.6;">El nuevo menú se publica el <strong>lunes</strong> — vuelve pronto para hacer tu pedido 🍽️</p>
+            <a href="https://wa.me/5215538546333?text=Hola%20Lappe!%20Tengo%20una%20duda%20sobre%20el%20men%C3%BA%20semanal%20%F0%9F%8D%BD%EF%B8%8F" target="_blank" rel="noopener" style="display:inline-block;background:#25D366;color:#fff;padding:13px 26px;border-radius:12px;font-weight:800;font-size:15px;text-decoration:none;">💬 Escríbenos por WhatsApp</a>
+          </div>
+
+          <div id="msFlujo" style="display:none;">
+          <!-- CÓMO FUNCIONA -->
+          <div style="background:#fff;border:2px dashed #EC6D4A;border-radius:18px;padding:18px 22px;margin-bottom:22px;">
+            <p style="font-size:14.5px;color:#3A3A2E;line-height:1.6;margin:0 0 12px;"><strong style="color:#D4502F;">🛒 Pide lo que quieras y la cantidad que quieras.</strong> No hay paquetes: cada platillo se cobra por separado.</p>
+            <p style="font-size:14.5px;color:#3A3A2E;border-top:1.5px solid #F9E2D8;padding-top:12px;margin:0;">Pedido mínimo <strong style="color:#D4502F;font-size:1.15rem;" id="msMinEtiqueta">$550</strong> — no incluye el envío</p>
+          </div>
+
+          <div style="display:grid;grid-template-columns:repeat(2, 1fr);gap:20px 16px;margin-bottom:36px;max-width:560px;margin-left:auto;margin-right:auto;">
+            <div style="text-align:center;">
+              <div style="width:54px;height:54px;border-radius:50%;background:#EC6D4A;color:#fff;font-weight:800;font-size:1.35rem;display:flex;align-items:center;justify-content:center;margin:0 auto 10px;box-shadow:0 8px 18px rgba(236,109,74,.32);">1</div>
+              <h4 style="font-size:.85rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;margin:0 0 5px;color:#3A3A2E;">Arma tu pedido</h4>
+              <p style="font-size:.8rem;color:#8A8A7A;line-height:1.5;margin:0;">Elige platillo por platillo, los que se te antojen. Cierre: <strong style="color:#D4502F;"><span class="ms-cierre-fecha">miércoles</span> <span class="ms-cierre-hora">8:00 pm</span></strong>.</p>
+            </div>
+            <div style="text-align:center;">
+              <div style="width:54px;height:54px;border-radius:50%;background:#EC6D4A;color:#fff;font-weight:800;font-size:1.35rem;display:flex;align-items:center;justify-content:center;margin:0 auto 10px;box-shadow:0 8px 18px rgba(236,109,74,.32);">2</div>
+              <h4 style="font-size:.85rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;margin:0 0 5px;color:#3A3A2E;">Paga</h4>
+              <p style="font-size:.8rem;color:#8A8A7A;line-height:1.5;margin:0;">Con tarjeta, transferencia o efectivo vía Mercado Pago, antes del <strong style="color:#D4502F;">jueves 8:00 pm</strong>.</p>
+            </div>
+            <div style="text-align:center;">
+              <div style="width:54px;height:54px;border-radius:50%;background:#EC6D4A;color:#fff;font-weight:800;font-size:1.35rem;display:flex;align-items:center;justify-content:center;margin:0 auto 10px;box-shadow:0 8px 18px rgba(236,109,74,.32);">3</div>
+              <h4 style="font-size:.85rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;margin:0 0 5px;color:#3A3A2E;">Cocinamos y empacamos</h4>
+              <p style="font-size:.8rem;color:#8A8A7A;line-height:1.5;margin:0;">Recetas de casa con ingredientes frescos, <strong>empacadas al alto vacío</strong>.</p>
+            </div>
+            <div style="text-align:center;">
+              <div style="width:54px;height:54px;border-radius:50%;background:#EC6D4A;color:#fff;font-weight:800;font-size:1.35rem;display:flex;align-items:center;justify-content:center;margin:0 auto 10px;box-shadow:0 8px 18px rgba(236,109,74,.32);">4</div>
+              <h4 style="font-size:.85rem;font-weight:800;letter-spacing:.05em;text-transform:uppercase;margin:0 0 5px;color:#3A3A2E;">Calienta y disfruta</h4>
+              <p style="font-size:.8rem;color:#8A8A7A;line-height:1.5;margin:0;">Recibe en casa el <strong>domingo o lunes</strong>. Listo en minutos, sin ensuciar la cocina.</p>
+            </div>
+          </div>
+
+          <!-- PASO 1: PLATILLOS -->
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:18px;">
+            <span style="background:#EC6D4A;color:#fff;width:28px;height:28px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;flex-shrink:0;">1</span>
+            <h3 style="font-size:1.25rem;font-weight:800;margin:0;">Elige tus platillos</h3>
+          </div>
+          <div id="msGrupos"><p style="color:#8A8A7A;text-align:center;padding:30px;">Cargando platillos...</p></div>
+
+          <!-- PASO 2: DATOS -->
+          <div style="display:flex;align-items:center;gap:10px;margin:32px 0 18px;">
+            <span style="background:#EC6D4A;color:#fff;width:28px;height:28px;border-radius:50%;display:inline-flex;align-items:center;justify-content:center;font-weight:800;font-size:14px;flex-shrink:0;">2</span>
+            <h3 style="font-size:1.25rem;font-weight:800;margin:0;">Tus datos y entrega</h3>
+          </div>
+
+          <form id="msForm" style="background:#fff;border-radius:20px;box-shadow:0 8px 32px rgba(0,0,0,0.08);padding:28px;">
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px;margin-bottom:14px;">
+              <div>
+                <label class="ms-lbl">Nombre completo <span style="color:#EC6D4A;">*</span></label>
+                <input class="ms-in" type="text" name="nombre" placeholder="Tu nombre y apellidos" required>
+              </div>
+              <div>
+                <label class="ms-lbl">Correo electrónico (opcional)</label>
+                <input class="ms-in" type="email" name="email" placeholder="tucorreo@email.com">
+              </div>
+              <div>
+                <label class="ms-lbl">Teléfono / WhatsApp (10 dígitos) <span style="color:#EC6D4A;">*</span></label>
+                <input class="ms-in" type="tel" name="telefono" maxlength="10" inputmode="numeric" placeholder="5512345678" required>
+              </div>
+            </div>
+            <div style="display:grid;grid-template-columns:2fr 1fr 1fr;gap:14px;margin-bottom:14px;">
+              <div>
+                <label class="ms-lbl">Calle <span style="color:#EC6D4A;">*</span></label>
+                <input class="ms-in" type="text" name="calle" placeholder="Nombre de la calle" required>
+              </div>
+              <div>
+                <label class="ms-lbl"># Exterior <span style="color:#EC6D4A;">*</span></label>
+                <input class="ms-in" type="text" name="numext" placeholder="123" required>
+              </div>
+              <div>
+                <label class="ms-lbl"># Interior <span style="color:#8A8A7A;text-transform:none;">(opcional)</span></label>
+                <input class="ms-in" type="text" name="numint" placeholder="A, 2, etc.">
+              </div>
+            </div>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px;margin-bottom:12px;">
+              <div>
+                <label class="ms-lbl">Alcaldía o municipio <span style="color:#EC6D4A;">*</span></label>
+                <select class="ms-in" name="alcaldia" id="msAlc" required>
+                  <option value="">Cargando lista...</option>
+                </select>
+              </div>
+              <div>
+                <label class="ms-lbl">Colonia <span style="color:#EC6D4A;">*</span></label>
+                <select class="ms-in" name="colonia" id="msCol" required disabled>
+                  <option value="">Primero elige tu alcaldía</option>
+                </select>
+              </div>
+              <div>
+                <label class="ms-lbl">Código postal <span style="color:#EC6D4A;">*</span></label>
+                <input class="ms-in" type="text" name="cp" id="msCp" maxlength="5" inputmode="numeric" placeholder="06700" required>
+              </div>
+            </div>
+
+            <!-- ZONA AUTOMÁTICA -->
+            <div id="msZonaBox" style="display:none;border-radius:14px;padding:14px 16px;margin-bottom:14px;font-size:13.5px;line-height:1.6;"></div>
+
+            <div style="margin-bottom:14px;">
+              <label class="ms-lbl">Horario de entrega <span style="color:#EC6D4A;">*</span></label>
+              <select class="ms-in" name="horario" required>
+                <option value="">Selecciona horario...</option>
+                <option>Domingo matutino — 10:00 am a 2:00 pm</option>
+                <option>Domingo vespertino — 4:00 pm a 6:00 pm</option>
+                <option>Lunes matutino — 10:00 am a 2:00 pm</option>
+              </select>
+            </div>
+
+            <!-- AVISOS -->
+            <div style="display:flex;gap:12px;align-items:flex-start;background:#fff;border:1.5px solid #DDCBBA;border-radius:14px;padding:14px 16px;margin-bottom:12px;font-size:13.5px;color:#8A8A7A;line-height:1.6;">
+              <span style="font-size:20px;flex-shrink:0;">📦</span>
+              <span>La entrega se realiza a través de una plataforma de mensajería. Recibirás un link de seguimiento y te pedimos estar al pendiente para recibir tu paquete sin contratiempos.</span>
+            </div>
+            <div style="display:flex;gap:12px;align-items:flex-start;background:#F9E2D8;border:1.5px solid rgba(236,109,74,.4);border-radius:14px;padding:14px 16px;margin-bottom:20px;font-size:13.5px;color:#D4502F;line-height:1.6;">
+              <span style="font-size:20px;flex-shrink:0;">⏰</span>
+              <span>El pago debe realizarse a más tardar el <strong class="ms-pago-fecha">jueves</strong> 8:00 pm. En caso de no recibirse en ese plazo, lamentablemente no podremos procesar tu pedido.</span>
+            </div>
+
+            <!-- RESUMEN -->
+            <div style="background:#F5EEE1;border-radius:14px;padding:16px 20px;margin-bottom:18px;">
+              <div id="msResumen" style="font-size:13px;color:#8A8A7A;margin-bottom:10px;">Aún no has agregado platillos</div>
+              <div style="display:flex;justify-content:space-between;font-size:14px;color:#8A8A7A;"><span>Subtotal</span><span id="msSub">$0</span></div>
+              <div style="display:flex;justify-content:space-between;font-size:14px;color:#8A8A7A;"><span>Envío</span><span id="msEnv">—</span></div>
+              <div style="display:flex;justify-content:space-between;font-size:1.25rem;font-weight:800;color:#EC6D4A;margin-top:6px;"><span>Total</span><span id="msTotal">$0</span></div>
+              <div id="msMinimo" style="display:none;margin-top:10px;background:#F9E2D8;border:1.5px solid rgba(236,109,74,.4);border-radius:10px;padding:10px 12px;font-size:13px;color:#D4502F;font-weight:600;line-height:1.5;"></div>
+            </div>
+
+            <button type="submit" id="msPagar" style="width:100%;padding:16px;background:#EC6D4A;color:#fff;border:none;border-radius:12px;font-weight:800;font-size:16px;cursor:pointer;font-family:inherit;opacity:.5;" disabled>💳 Pagar con Mercado Pago</button>
+            <p style="text-align:center;font-size:12px;color:#8A8A7A;margin:10px 0 0;">🔒 Pago cifrado y procesado por Mercado Pago — <strong>nunca vemos ni guardamos los datos de tu tarjeta</strong>. Tu pedido queda registrado con folio.</p>
+            <p style="text-align:center;font-size:11px;color:#8A8A7A;margin:8px 0 0;line-height:1.5;">Al enviar tu pedido aceptas el tratamiento de tus datos para procesarlo y entregarlo. Responsable: <strong>Lappe</strong>, Asturias 25, Col. Insurgentes Mixcoac, Benito Ju&aacute;rez, CDMX. <a href="aviso-privacidad.html" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;">Aviso de privacidad completo</a>.</p>
+            <div id="msStatus" style="display:none;margin-top:14px;padding:12px 14px;border-radius:10px;font-size:14px;font-weight:600;"></div>
+          </form>
+          </div>
+
+          <p style="text-align:center;margin-top:24px;"><a href="zonas.html" style="color:#D4502F;font-weight:800;font-size:.95rem;text-decoration:underline;">🗺️ Consulta las zonas de entrega y costos de envío</a></p>
+        </div>
+      </div>
+    </section>
+
+  <section style="padding:80px 0;background:var(--bg-light);" id="envios">
+    <div class="container">
+      <div class="fade-up" style="text-align:center;margin-bottom:48px;">
+        <span class="section-label">Envíos CDMX</span>
+        <h2 class="section-heading">Zona de Entrega</h2>
+        <p class="section-sub" style="margin:0 auto;">Llevamos Lappe directo a tu puerta. Consulta el costo según tu colonia.</p>
+      </div>
+      <div class="fade-up" style="max-width:760px;margin:0 auto 40px;background:#fff;border-radius:22px;box-shadow:var(--shadow-sm);border:1px solid #EDE4D2;padding:36px 30px;text-align:center;">
+        <div style="font-size:42px;margin-bottom:8px;">🗺️</div>
+        <h3 style="font-size:1.3rem;font-weight:800;margin-bottom:8px;">Tenemos 6 zonas de entrega en CDMX y Edomex</h3>
+        <p style="color:var(--text-muted);font-size:.95rem;max-width:520px;margin:0 auto 22px;line-height:1.6;">Explora el mapa o escribe tu colonia para saber tu zona y el costo exacto de tu envío.</p>
+        <a href="zonas.html" style="display:inline-block;background:var(--accent);color:#fff;font-weight:800;font-size:1rem;padding:15px 36px;border-radius:100px;text-decoration:none;box-shadow:0 8px 24px rgba(236,109,74,.3);">Ver el mapa de zonas →</a>
+      </div>
+
+      <div class="fade-up" style="text-align:center;">
+        <p style="font-size:.9rem;color:var(--text-muted);margin-bottom:20px;">¿Tu colonia no aparece? Escríbenos y te confirmamos el costo.</p>
+        <a href="https://wa.me/5215538546333?text=Hola!%20Quiero%20saber%20el%20costo%20de%20envio%20a%20mi%20colonia" style="display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#fff;font-size:.9rem;font-weight:700;padding:12px 28px;border-radius:100px;text-decoration:none;transition:background .2s;">
+          Consultar mi zona →
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="testimonials" id="testimonios">
+    <div class="container">
+      <div class="testimonials-header fade-up">
+        <span class="section-label">Testimonios</span>
+        <h2 class="section-heading">Lo que dicen nuestros clientes</h2>
+        <p class="section-sub">Familias y anfitriones que ya confían en Lappe para sus reuniones y comidas del día a día.</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card fade-up">
+          <div class="testimonial-stars">
+            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+          </div>
+          <p class="testimonial-text">"La comida llegó bien empacada ¡y con un sabor increíble!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">🧡</div>
+            <div>
+              <p class="author-name">Cliente de Lappe</p>
+              <p class="author-loc">CDMX</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card fade-up" style="transition-delay: 0.1s;">
+          <div class="testimonial-stars">
+            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+          </div>
+          <p class="testimonial-text">"El sazón es espectacular. Mi familia quedó encantada."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">🍲</div>
+            <div>
+              <p class="author-name">Cliente de Lappe</p>
+              <p class="author-loc">CDMX</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card fade-up" style="transition-delay: 0.2s;">
+          <div class="testimonial-stars">
+            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+          </div>
+          <p class="testimonial-text">"Probé los chiles en nogada y fueron de los mejores que he comido. La nogada estaba perfecta y el relleno delicioso."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">🌶️</div>
+            <div>
+              <p class="author-name">Cliente de Lappe</p>
+              <p class="author-loc">CDMX</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card fade-up">
+          <div class="testimonial-stars">
+            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+          </div>
+          <p class="testimonial-text">"Probé las croquetas y espinacas ¡y deliciosas!"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">😋</div>
+            <div>
+              <p class="author-name">Cliente de Lappe</p>
+              <p class="author-loc">CDMX</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card fade-up" style="transition-delay: 0.1s;">
+          <div class="testimonial-stars">
+            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+          </div>
+          <p class="testimonial-text">"¡Moni! Comimos hoy tus tacos ¡y qué delicia! ¡Están wow los dos! Qué delicia los árabes 🫠🫠🤌🏼🤌🏼😮‍💨"</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">🌮</div>
+            <div>
+              <p class="author-name">Cliente de Lappe</p>
+              <p class="author-loc">CDMX</p>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card fade-up" style="transition-delay: 0.2s;">
+          <div class="testimonial-stars">
+            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+          </div>
+          <p class="testimonial-text">"Excelente servicio y un sazón delicioso. El lomo en salsa de naranja me pareció espectacular, de los mejores platillos que he probado. Todo estuvo muy bien preparado y la atención fue siempre muy amable."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">⭐</div>
+            <div>
+              <p class="author-name">Cliente de Lappe</p>
+              <p class="author-loc">CDMX</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- GALERÍA -->
+  <section id="galeria" style="padding:80px 0;background:var(--bg-light);">
+    <div class="container">
+      <div class="fade-up" style="text-align:center;margin-bottom:44px;">
+        <span class="section-label">Galería</span>
+        <h2 class="section-heading">Para que se te antoje</h2>
+        <p class="section-sub" style="margin:0 auto;">Así se ve el sabor de casa: nuestros platillos, empaques al alto vacío y todo lo que sale de la cocina de Lappe.</p>
+      </div>
+      <div class="glr-wrap" id="glrWrap">
+        <div class="glr-masonry">
+        <figure><img src="lappe-hero.jpg" alt="Tacos al pastor" loading="lazy"></figure>
+        <figure><img src="hero-carousel-4.jpg" alt="Chilaquiles verdes" loading="lazy"></figure>
+        <figure><img src="lappe-quesadillas.jpg" alt="Quesadillas" loading="lazy"></figure>
+        <figure><img src="hero-carousel-2.jpg" alt="Kit de carne al pastor" loading="lazy"></figure>
+        <figure><img src="lappe-cochinita.jpg" alt="Cochinita pibil" loading="lazy"></figure>
+        <figure><img src="lappe-ravioles.jpg" alt="Ravioles" loading="lazy"></figure>
+        <figure><img src="hero-carousel-3.jpg" alt="Salsa verde" loading="lazy"></figure>
+        <figure><img src="lappe-pastor-arabe.jpg" alt="Pastor árabe" loading="lazy"></figure>
+        <figure><img src="lappe-tamales.jpg" alt="Rosca de tamal verde" loading="lazy"></figure>
+        <figure><img src="lappe-campechana.jpg" alt="Tacos campechanos" loading="lazy"></figure>
+        <figure><img src="lappe-chicharron.jpg" alt="Chicharrón en salsa" loading="lazy"></figure>
+        <figure><img src="lappe-crepas.jpg" alt="Crepas" loading="lazy"></figure>
+        <figure><img src="lappe-pastor.jpg" alt="Carne al pastor" loading="lazy"></figure>
+        <figure><img src="hero-carousel-5.jpg" alt="Frijoles con tocino" loading="lazy"></figure>
+        <figure><img src="lappe-lasagna.jpg" alt="Lasagna" loading="lazy"></figure>
+        <figure><img src="lappe-roscas.jpg" alt="Rosca de elote" loading="lazy"></figure>
+        <figure><img src="lappe-carne-jugo.jpg" alt="Carne en su jugo" loading="lazy"></figure>
+        <figure><img src="lappe-chilaquiles.jpg" alt="Chilaquiles verdes con pollo" loading="lazy"></figure>
+        <figure><img src="lappe-tequenos.jpg" alt="Tequeños de queso" loading="lazy"></figure>
+        <figure><img src="lappe-salsas-gourmet.jpg" alt="Salsas gourmet" loading="lazy"></figure>
+        <figure><img src="lappe-salsa-verde.jpg" alt="Salsas mexicanas" loading="lazy"></figure>
+        <figure><img src="lappe-mini-tacos.jpg" alt="Mini tacos" loading="lazy"></figure>
+        <figure><img src="lappe-gallery.jpg" alt="Sabor a familia" loading="lazy"></figure>
+        <figure><img src="lappe-cochinita-cazo.jpg" alt="Cochinita pibil en cazo" loading="lazy"></figure>
+        <figure><img src="lappe-enchiladas-mole.jpg" alt="Enchiladas de mole" loading="lazy"></figure>
+        <figure><img src="lappe-pollo-mole.jpg" alt="Pollo con mole" loading="lazy"></figure>
+        <figure><img src="hero-carousel-1.jpg" alt="Tacos al pastor" loading="lazy"></figure>
+        </div>
+        <div class="glr-fade"></div>
+      </div>
+      <div style="text-align:center;margin-top:26px;">
+        <button class="glr-btn" id="glrBtn" onclick="glrToggle()">Ver más fotos 📸</button>
+      </div>
+    </div>
+  </section>
+
+
+<div class="pedir-modal" id="saborModal">
+  <div class="pedir-card">
+    <button class="pedir-cerrar" onclick="cerrarSabores()" aria-label="Cerrar">&times;</button>
+    <h3 id="saborTitulo" style="margin-bottom:4px;">Elige tu sabor</h3>
+    <p style="color:#8A8A7A;font-size:.9rem;margin-bottom:18px;">Elige cómo lo quieres:</p>
+    <div id="saborGrupos"></div>
+    <button id="saborAgregar" onclick="confirmarSabor()" disabled style="width:100%;padding:14px;background:#EC6D4A;color:#fff;border:none;border-radius:12px;font-weight:800;font-size:15px;cursor:pointer;font-family:inherit;opacity:.5;">🛒 Agregar al carrito</button>
+  </div>
+</div>
+
+<div class="pedir-modal" id="pedirModal">
+  <div class="pedir-card">
+    <button class="pedir-cerrar" onclick="cerrarPedir()" aria-label="Cerrar">&times;</button>
+    <h3>¿Qué se te antoja hoy? 🧡</h3>
+    <p>Elige cómo quieres pedir:</p>
+    <div class="pedir-ops">
+      <a class="pedir-op" href="index.html#productos" onclick="cerrarPedir()">
+        <span class="op-emoji">🛒</span>
+        <span class="op-title">Productos</span>
+        <span class="op-desc">Quesadillas, pastor, salsas y más — pide hoy lo que quieras</span>
+      </a>
+      <a class="pedir-op" href="index.html#menu-semanal" onclick="cerrarPedir()">
+        <span class="op-emoji">📅</span>
+        <span class="op-title">Menú Semanal</span>
+        <span class="op-desc">Arma tu semana de comidas con entrega el domingo o lunes</span>
+      </a>
+    </div>
+    <span class="pedir-wa">¿Prefieres atención personal? <a href="https://wa.me/5215538546333?text=Hola!%20Me%20interesa%20hacer%20un%20pedido%20de%20Lappe%20%F0%9F%8D%BD%EF%B8%8F" target="_blank" rel="noopener noreferrer">Escríbenos por WhatsApp</a></span>
+  </div>
+</div>
+
+<div class="foto-visor" id="fotoVisor" role="dialog" aria-label="Foto del platillo">
+  <button class="fv-cerrar" aria-label="Cerrar">&times;</button>
+  <figure>
+    <img id="fvImg" src="index.html" alt="">
+    <figcaption><span id="fvNombre" style="color:#F5EEE1;margin:0;"></span><span id="fvPrecio"></span></figcaption>
+  </figure>
+  <div class="fv-hint">Toca en cualquier lado para cerrar</div>
+</div>
+
+<footer class="footer" id="contacto">
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <div style="width:fit-content;text-align:center;">
+          <p class="footer-logo-main">LAPPE</p>
+          <p class="footer-logo-sub">cocina</p>
+          </div>
+          <p>Comida congelada empaquetada al alto vacío. El sabor de siempre, listo en 10 minutos. CDMX a tu puerta.</p>
+          <div class="footer-social">
+            <a href="https://instagram.com/lappecocina" target="_blank" rel="noopener noreferrer" class="social-btn" title="Instagram @lappecocina">
+              <svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:currentColor;">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+              </svg>
+            </a>
+            <a href="https://wa.me/5215538546333" target="_blank" rel="noopener noreferrer" class="social-btn" title="WhatsApp">
+              <svg viewBox="0 0 24 24" style="width:18px;height:18px;fill:currentColor;">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <p class="footer-col-title">Menú</p>
+          <ul class="footer-col-links">
+            <li><a href="index.html#por-que-lappe">Por qué Lappe</a></li>
+            <li><a href="index.html#como-funciona">Cómo funciona</a></li>
+            <li><a href="index.html#productos">Productos</a></li>
+            <li><a href="index.html#menu-semanal">Menú Semanal</a></li>
+            <li><a href="index.html#envios">Zona</a></li>
+            <li><a href="index.html#galeria">Galería</a></li>
+          <li><a href="index.html#testimonios">Testimonios</a></li>
+          <li><a href="index.html#galeria">Galería</a></li>
+          </ul>
+        </div>
+        <div>
+          <p class="footer-col-title">Contacto</p>
+          <ul class="footer-col-links">
+            <li><a href="https://wa.me/5215538546333" target="_blank" rel="noopener noreferrer">WhatsApp: 55 3854 6333</a></li>
+            <li><a href="mailto:lappesabor@gmail.com">lappesabor@gmail.com</a></li>
+            <li><a href="https://instagram.com/lappecocina" target="_blank" rel="noopener noreferrer">Instagram: @lappecocina</a></li>
+            <li><a href="index.html#">CDMX, México</a></li>
+            <li><a href="index.html#productos">Hacer un pedido</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Lappe Cocina. Todos los derechos reservados. &middot; <a href="aviso-privacidad.html">Aviso de privacidad</a></p>
+        <p>Hecho con sabor en <a href="index.html#">CDMX</a> &middot; Hecho por <a href="https://brotadigital.mx/" target="_blank" rel="noopener">Brota</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ======================================
+       FLOATING WHATSAPP
+  ====================================== -->
+  <a href="https://wa.me/5215538546333?text=Hola!%20Me%20interesa%20hacer%20un%20pedido%20de%20Lappe%20%F0%9F%8D%BD%EF%B8%8F"
+     target="_blank" rel="noopener noreferrer"
+     class="wa-float"
+     title="Pedir por WhatsApp">
+    <svg viewBox="0 0 24 24">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+    <div class="wa-pulse"></div>
+  </a>
+
+  <!-- ======================================
+       CARRITO
+  ====================================== -->
+  <div class="cart-overlay" id="cartOverlay" onclick="closeCart()"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-label="Carrito de compras">
+    <div class="cart-head">
+      <h3>Tu pedido</h3>
+      <button class="cart-close" onclick="closeCart()" aria-label="Cerrar carrito">&times;</button>
+    </div>
+    <div class="cart-body">
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-foot" id="cartFoot">
+      <label class="cot-section-title" style="display:block;">Tus datos de entrega</label>
+      <input id="cartNombre" class="cart-zone" type="text" placeholder="Nombre completo *" autocomplete="name">
+      <input id="cartTel" class="cart-zone" type="tel" maxlength="10" inputmode="numeric" placeholder="Tel&eacute;fono / WhatsApp (10 d&iacute;gitos) *" autocomplete="tel">
+      <input id="cartEmail" class="cart-zone" type="email" placeholder="Correo (opcional)" autocomplete="email">
+      <input id="cartCalle" class="cart-zone" type="text" placeholder="Calle *" autocomplete="address-line1">
+      <div style="display:flex;gap:8px;">
+        <input id="cartNumExt" class="cart-zone" type="text" placeholder="# Ext *" style="flex:1;min-width:0;">
+        <input id="cartNumInt" class="cart-zone" type="text" placeholder="# Int" style="flex:1;min-width:0;">
+        <input id="cartCP" class="cart-zone" type="text" maxlength="5" inputmode="numeric" placeholder="C.P." style="flex:1;min-width:0;" autocomplete="postal-code">
+      </div>
+      <label class="cot-section-title" style="display:block;">Zona de entrega</label>
+      <select id="cartAlc" class="cart-zone">
+        <option value="" selected disabled>Elige tu alcald&iacute;a&hellip;</option>
+      </select>
+      <select id="cartCol" class="cart-zone" disabled>
+        <option value="">Primero elige tu alcald&iacute;a</option>
+      </select>
+      <div id="cartZonaInfo" style="display:none;font-size:.82rem;font-weight:700;margin:-4px 0 12px;color:var(--green);"></div>
+      <div class="cart-total-row"><span>Total</span><strong id="cartTotal">$0 MXN</strong></div>
+      <button class="btn-mp" id="mpBtn" onclick="checkout()">Pagar con Mercado Pago</button>
+      <p style="font-size:.72rem;color:var(--text-muted);text-align:center;margin:8px 0 0;">🔒 Pago cifrado por Mercado Pago — nunca vemos los datos de tu tarjeta.</p>
+      <p style="font-size:.66rem;color:var(--text-muted);text-align:center;margin:6px 0 0;line-height:1.5;">Al enviar tu pedido aceptas el tratamiento de tus datos para procesarlo y entregarlo. Responsable: <strong>Lappe</strong>, Asturias 25, Col. Insurgentes Mixcoac, Benito Ju&aacute;rez, CDMX. <a href="aviso-privacidad.html" target="_blank" rel="noopener" style="color:inherit;text-decoration:underline;">Aviso de privacidad completo</a>.</p>
+      <div id="cartMsg"></div>
+      <p class="cart-note">El <strong>men&uacute; semanal</strong> se contrata aparte &mdash; <a href="https://wa.me/5215538546333?text=Hola!%20Me%20interesa%20el%20men%C3%BA%20semanal%20de%20Lappe" target="_blank" rel="noopener noreferrer">escr&iacute;benos por WhatsApp</a>.</p>
+    </div>
+    </div>
+  </aside>
+  <div id="cartExito" style="display:none;position:fixed;inset:0;z-index:1200;background:rgba(58,58,46,.55);backdrop-filter:blur(4px);align-items:center;justify-content:center;padding:20px;">
+    <div style="background:#fff;border-radius:22px;padding:34px 28px;text-align:center;max-width:430px;width:100%;box-shadow:0 20px 60px rgba(0,0,0,.3);">
+      <div style="font-size:44px;">🎉</div>
+      <h3 style="font-size:1.4rem;font-weight:800;margin:8px 0 6px;">¡Pedido registrado!</h3>
+      <p style="color:#D4502F;font-size:16.5px;font-weight:700;line-height:1.5;margin:0 0 18px;">Guarda o <strong>toma captura</strong> de tu n&uacute;mero de pedido y <strong>env&iacute;anos la captura por WhatsApp</strong> 📲</p>
+      <div style="background:linear-gradient(135deg,#D4502F,#EC6D4A);border-radius:18px;padding:22px 30px;margin-bottom:16px;box-shadow:0 10px 30px rgba(236,109,74,.35);">
+        <div style="color:rgba(255,255,255,.85);font-size:12px;letter-spacing:3px;text-transform:uppercase;font-weight:800;">Tu n&uacute;mero de pedido</div>
+        <div id="cartExitoFolio" style="color:#fff;font-size:clamp(2.4rem, 9vw, 3.4rem);font-weight:800;letter-spacing:5px;line-height:1.15;"></div>
+      </div>
+      <div id="cartExitoTotal" style="font-size:1.5rem;font-weight:800;color:#EC6D4A;margin-bottom:14px;"></div>
+      <p id="cartExitoCuenta" style="font-size:13.5px;color:#D4502F;font-weight:700;margin:0 0 14px;"></p>
+      <a id="cartExitoMP" href="index.html#" style="display:flex;align-items:center;justify-content:center;gap:10px;background:#009ee3;color:#fff;padding:15px;border-radius:12px;font-size:16px;font-weight:800;text-decoration:none;">💳 Ir a pagar ahora</a>
+      <p style="font-size:12px;color:#8A8A7A;margin:12px 0 0;">🔒 Pago cifrado por Mercado Pago</p>
+    </div>
+  </div>
+  <button class="cart-float" id="cartFloat" onclick="openCart()" title="Ver mi pedido" aria-label="Abrir carrito">
+    🛒<span class="cart-badge" id="cartBadge" hidden>0</span>
+  </button>
+
+  <!-- ======================================
+       JAVASCRIPT
+  ====================================== -->
+  <script>
+    // ---- Scroll animations ----
+    const fadeEls = document.querySelectorAll('.fade-up');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    fadeEls.forEach(el => observer.observe(el));
+    // Force-show elements already in viewport on load
+    requestAnimationFrame(() => {
+      fadeEls.forEach(el => {
+        const r = el.getBoundingClientRect();
+        if (r.top < window.innerHeight && r.bottom > 0) {
+          el.classList.add('visible');
+        }
+      });
+    });
+
+    // ---- Mobile nav ----
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('open');
+    });
+    hamburger.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') mobileMenu.classList.toggle('open');
+    });
+    function closeMenu() {
+      mobileMenu.classList.remove('open');
+    }
+
+    // ---- Tabs (productos) ----
+    let usuarioEligioTab = false;
+    document.addEventListener('DOMContentLoaded', function () {
+      const nav = document.querySelector('.tabs-nav');
+      if (nav) nav.addEventListener('click', function () { usuarioEligioTab = true; });
+    });
+    function switchTab(tab) {
+      document.querySelectorAll('.tab-btn').forEach(btn => {
+        btn.classList.remove('active');
+        btn.setAttribute('aria-selected', 'false');
+      });
+      document.querySelectorAll('.tab-panel').forEach(panel => panel.classList.remove('active'));
+      document.getElementById('btn-' + tab).classList.add('active');
+      document.getElementById('btn-' + tab).setAttribute('aria-selected', 'true');
+      document.getElementById('tab-' + tab).classList.add('active');
+    }
+
+    // ==== CARRITO ====
+    const CART_CATALOG = {
+      'quesadillas':      { nombre: 'Quesadillas (10 pzas)',       precio: 345 },
+      'pastor-arabe':     { nombre: 'Pastor árabe',                precio: 510 },
+      'cochinita':        { nombre: 'Cochinita pibil (1 kg)',      precio: 530 },
+      'chicharron':       { nombre: 'Chicharrón en salsa',         precio: 535 },
+      'pastor':           { nombre: 'Carne al pastor',             precio: 595 },
+      'carne-jugo':       { nombre: 'Carne en su jugo',            precio: 610 },
+      'campechanos':      { nombre: 'Tacos campechanos',           precio: 595 },
+      'quiches':          { nombre: 'Quiches (6 porciones)',       precio: 445 },
+      'lasagna':          { nombre: 'Lasagna (6 personas)',        precio: 715 },
+      'ravioles':         { nombre: 'Ravioles (6 personas)',       precio: 485 },
+      'crepas':           { nombre: 'Crepas (12 piezas)',         precio: 495 },
+      'roscas':           { nombre: 'Roscas (12 piezas)',          precio: 450 },
+      'salsas-gourmet':   { nombre: 'Salsas gourmet (1 L)',        precio: 310 },
+      'salsas-mexicanas': { nombre: 'Salsas mexicanas (1 L)',      precio: 225 },
+      'mini-tacos':       { nombre: 'Mini tacos (12 piezas)',      precio: 165 },
+      'tequenos':         { nombre: 'Tequeños de queso (12 pzas)', precio: 360 }
+    };
+    // Zonas por colonia: catálogo en vivo del Excel (una sola descarga compartida
+    // con el menú semanal vía window.lappeMenuPromise)
+    const CART_MS_URL = 'https://script.google.com/macros/s/AKfycbxTWhJF4jbMfdnXZA9IYSsCn3Tz17LBpAzcgzUblzHmOGSDpVabSADBVTmltEMzqN16/exec';
+    let cartColonias = [];
+    let cartZona = null; // {z, p, colonia, alcaldia}
+
+    window.lappeMenuPromise = window.lappeMenuPromise || fetch(CART_MS_URL).then(function (r) { return r.json(); });
+    window.lappeMenuPromise.then(function (menu) {
+      cartColonias = (menu.zonas && menu.zonas.colonias) || [];
+      const alcs = (menu.zonas && menu.zonas.alcaldias) || [];
+      const sa = document.getElementById('cartAlc');
+      let o = '<option value="" selected disabled>Elige tu alcald\u00eda\u2026</option>';
+      alcs.forEach(function (a) { o += '<option>' + a + '</option>'; });
+      o += '<option value="__otra__">Mi alcald\u00eda no aparece</option>';
+      sa.innerHTML = o;
+    }).catch(function () {});
+
+    function cartOnAlcaldia() {
+      const alc = document.getElementById('cartAlc').value;
+      const sc = document.getElementById('cartCol');
+      cartZona = null;
+      if (!alc || alc === '__otra__') {
+        sc.innerHTML = '<option value="">\u2014</option>';
+        sc.disabled = true;
+        if (alc === '__otra__') cartZona = 'otra';
+      } else if (!cartColonias.some(function (c) { return c.a === alc; })) {
+        sc.innerHTML = '<option value="">\u2014</option>';
+        sc.disabled = true;
+        cartZona = 'otra';
+      } else {
+        const cols = cartColonias.filter(function (c) { return c.a === alc; });
+        let o = '<option value="" selected disabled>Elige tu colonia\u2026</option>';
+        cols.forEach(function (c) { o += '<option>' + c.c + '</option>'; });
+        o += '<option value="__otra__">Mi colonia no aparece</option>';
+        sc.innerHTML = o;
+        sc.disabled = false;
+      }
+      updateCartTotal();
+    }
+
+    function cartOnColonia() {
+      const alc = document.getElementById('cartAlc').value;
+      const v = document.getElementById('cartCol').value;
+      cartZona = null;
+      if (v === '__otra__') {
+        cartZona = 'otra';
+      } else if (v) {
+        const c = cartColonias.filter(function (x) { return x.a === alc && x.c === v; })[0];
+        if (c) cartZona = { z: Number(c.z) || 0, p: Number(c.p) || 0, colonia: c.c, alcaldia: c.a };
+      }
+      updateCartTotal();
+    }
+    let WA_NUM = '5215538546333'; // se actualiza con la celda "Whatsapp" del Excel
+
+    // Sabores por producto (los que no aparecen aquí se agregan directo)
+    const CART_SABORES = {
+      'quesadillas':      [{ t: 'Sabor', ops: ['Chicharrón prensado', 'Queso', 'Hongos'] }],
+      'chicharron':       [{ t: 'Salsa', ops: ['Roja', 'Verde'] }],
+      'quiches':          [{ t: 'Sabor', ops: ['Lorraine', 'Espinacas', 'Espárragos'] }],
+      'lasagna':          [{ t: 'Sabor', ops: ['Bolognesa', 'Poblana', 'Vegetariana', 'Chicharrón'] }],
+      'ravioles':         [{ t: 'Relleno', ops: ['Queso', 'Carne'] }, { t: 'Salsa', ops: ['Cuatro quesos', 'Pomodoro', 'Pesto'] }],
+      'crepas':           [{ t: 'Relleno', ops: ['Chicharrón', 'Pollo', 'Hongos'] }, { t: 'Salsa', ops: ['Blanca', 'Roja', 'Poblana'] }],
+      'roscas':           [{ t: 'Sabor', ops: ['Tamal verde', 'Elote con salsa roja y rajas poblanas'] }],
+      'salsas-gourmet':   [{ t: 'Sabor', ops: ['Blanca', 'Cuatro quesos', 'Arrabiata'] }],
+      'salsas-mexicanas': [{ t: 'Sabor', ops: ['Roja', 'Verde', 'Poblana'] }],
+      'mini-tacos':       [{ t: 'Sabor', ops: ['Carne', 'Pollo'] }]
+    };
+
+    // Pedidos mínimos — valores de respaldo; los reales se leen del Excel al cargar
+    let CART_MIN = 550; // tienda (pestaña Productos)
+    let MS_MIN = 550;   // menú semanal (pestaña Menú)
+    // Mínimo de piezas por producto (ej. chiles en nogada: mínimo 2) — se llena
+    // desde las Condiciones del bloque de temporada del Excel
+    const TEMP_MIN = {};
+
+    // Stock semanal (espejo de la tabla del servidor; se renueva cada domingo).
+    // Número = por producto; objeto = por primera opción de sabor (relleno).
+    const CART_STOCK = {
+      'quesadillas':      { 'Chicharrón prensado': 10, 'Queso': 10, 'Hongos': 10 },
+      'pastor-arabe':     10,
+      'cochinita':        10,
+      'chicharron':       { 'Roja': 5, 'Verde': 5 },
+      'pastor':           15,
+      'carne-jugo':       10,
+      'campechanos':      10,
+      'quiches':          { 'Lorraine': 5, 'Espinacas': 5, 'Espárragos': 3 },
+      'lasagna':          { 'Bolognesa': 5, 'Poblana': 5, 'Vegetariana': 5, 'Chicharrón': 5 },
+      'ravioles':         { 'Queso · Pomodoro': 5, 'Queso · Cuatro quesos': 5, 'Queso · Pesto': 5, 'Carne · Pomodoro': 5, 'Carne · Cuatro quesos': 5, 'Carne · Pesto': 5 },
+      'crepas':           { 'Chicharrón': 5, 'Pollo': 5, 'Hongos': 5 },
+      'roscas':           { 'Tamal verde': 5, 'Elote con salsa roja y rajas poblanas': 5 },
+      'salsas-gourmet':   { 'Blanca': 5, 'Cuatro quesos': 5, 'Arrabiata': 5 },
+      'salsas-mexicanas': { 'Roja': 5, 'Verde': 5, 'Poblana': 5 },
+      'mini-tacos':       { 'Carne': 5, 'Pollo': 5 },
+      'tequenos':         5,
+    };
+    function stockPrimera(sabor) { return String(sabor || '').split(' · ')[0]; }
+    // Variante que gasta stock: la combinación completa si existe en la tabla
+    // (ravioles: relleno · salsa), si no, la primera opción (relleno/sabor)
+    function stockVariante(id, sabor) {
+      const s = CART_STOCK[id];
+      if (typeof s !== 'object') return '';
+      const full = String(sabor || '').trim();
+      return s[full] !== undefined ? full : stockPrimera(sabor);
+    }
+    function stockMaxDe(id, sabor) {
+      const s = CART_STOCK[id];
+      if (s === undefined) return Infinity;
+      if (typeof s === 'number') return s;
+      const v = s[stockVariante(id, sabor)];
+      return v === undefined ? 0 : v;
+    }
+    // Cuántas piezas de la misma llave de stock ya hay en el carrito
+    function enCarritoDe(id, sabor) {
+      const p = stockVariante(id, sabor);
+      return Object.entries(cart).reduce(function (t, par) {
+        const [pid, psabor] = par[0].split('||');
+        if (pid === id && (typeof CART_STOCK[id] === 'number' || stockVariante(id, psabor) === p)) t += par[1];
+        return t;
+      }, 0);
+    }
+    let cartAvisoTimer = null;
+    function cartAvisoStock(nombre, n) {
+      let t = document.getElementById('cartAvisoStock');
+      if (!t) {
+        t = document.createElement('div');
+        t.id = 'cartAvisoStock';
+        t.style.cssText = 'position:fixed;left:50%;bottom:24px;transform:translateX(-50%);z-index:1300;background:#3A3A2E;color:#F5EEE1;padding:14px 20px;border-radius:14px;font-size:14px;font-weight:600;box-shadow:0 10px 30px rgba(0,0,0,.3);max-width:min(92vw,420px);text-align:center;line-height:1.5;opacity:0;transition:opacity .3s ease;';
+        document.body.appendChild(t);
+      }
+      t.innerHTML = 'Esta semana solo tenemos <strong>' + n + '</strong> de <strong>' + nombre + '</strong>. Para pedidos m&aacute;s grandes escr&iacute;benos por <a href="https://wa.me/5215538546333?text=Hola%20Lappe!%20Quiero%20hacer%20un%20pedido%20grande%20%F0%9F%9B%92" target="_blank" rel="noopener" style="color:#EC6D4A;font-weight:800;">WhatsApp 💬</a>';
+      requestAnimationFrame(function () { t.style.opacity = '1'; });
+      clearTimeout(cartAvisoTimer);
+      cartAvisoTimer = setTimeout(function () { t.style.opacity = '0'; }, 6000);
+    }
+
+    // El carrito guarda llaves "id||sabor" (sabor vacío si no aplica)
+    let cart = {};
+    try { cart = JSON.parse(localStorage.getItem('lappe-cart') || '{}'); } catch (e) { cart = {}; }
+    Object.keys(cart).forEach(k => {
+      if (!k.includes('||')) { const q = cart[k]; delete cart[k]; if (CART_CATALOG[k] && q >= 1) cart[k + '||'] = q; }
+    });
+    Object.keys(cart).forEach(k => { const id = k.split('||')[0]; if (!CART_CATALOG[id] || !(cart[k] >= 1)) delete cart[k]; });
+    Object.keys(cart).forEach(k => { const [id, sab] = k.split('||'); if (CART_SABORES[id] && !sab) delete cart[k]; });
+
+    function saveCart() { localStorage.setItem('lappe-cart', JSON.stringify(cart)); }
+    function cartCount() { return Object.values(cart).reduce((a, b) => a + b, 0); }
+    function cartSubtotal() { return Object.entries(cart).reduce((s, [k, q]) => s + CART_CATALOG[k.split('||')[0]].precio * q, 0); }
+
+    function cartAdd(id, sabor) {
+      const key = id + '||' + (sabor || '');
+      // La primera vez, los productos con mínimo de piezas entran con su mínimo
+      const paso = (!cart[key] && TEMP_MIN[id]) ? TEMP_MIN[id] : 1;
+      const max = stockMaxDe(id, sabor);
+      if (enCarritoDe(id, sabor) + paso > max) {
+        cartAvisoStock(CART_CATALOG[id].nombre + (CART_SABORES[id] ? ' (' + stockVariante(id, sabor) + ')' : ''), max);
+        return;
+      }
+      cart[key] = (cart[key] || 0) + paso;
+      saveCart(); renderCart(); openCart();
+    }
+    function addToCart(id) {
+      if (CART_SABORES[id]) { abrirSabores(id); return; }
+      cartAdd(id, '');
+    }
+    function cartQty(key, delta) {
+      const [id, sabor] = key.split('||');
+      if (delta > 0) {
+        const max = stockMaxDe(id, sabor);
+        if (enCarritoDe(id, sabor) + delta > max) {
+          cartAvisoStock(CART_CATALOG[id].nombre + (CART_SABORES[id] ? ' (' + stockVariante(id, sabor) + ')' : ''), max);
+          return;
+        }
+      }
+      cart[key] = (cart[key] || 0) + delta;
+      // Bajar del mínimo de piezas elimina el producto (no se puede pedir menos)
+      if (cart[key] <= 0 || (delta < 0 && TEMP_MIN[id] && cart[key] < TEMP_MIN[id])) delete cart[key];
+      saveCart(); renderCart();
+    }
+
+    // ---- Selector de sabores ----
+    let saborProd = null, saborSel = {};
+    function abrirSabores(id) {
+      saborProd = id; saborSel = {};
+      document.getElementById('saborTitulo').textContent = CART_CATALOG[id].nombre;
+      pintarSabores();
+      document.getElementById('saborModal').classList.add('on');
+      document.body.style.overflow = 'hidden';
+    }
+    function cerrarSabores() {
+      document.getElementById('saborModal').classList.remove('on');
+      document.body.style.overflow = '';
+    }
+    function pintarSabores() {
+      const grupos = CART_SABORES[saborProd] || [];
+      let out = '';
+      grupos.forEach(function (g, gi) {
+        out += '<div style="margin-bottom:16px;text-align:left;">'
+          + '<div style="font-size:11px;font-weight:800;color:#8A8A7A;text-transform:uppercase;letter-spacing:.8px;margin-bottom:8px;">' + g.t + '</div>'
+          + '<div style="display:flex;flex-wrap:wrap;gap:8px;">';
+        g.ops.forEach(function (op) {
+          const sel = saborSel[gi] === op;
+          out += '<button type="button" onclick="elegirSabor(' + gi + ', \'' + op.replace(/'/g, "\\'") + '\')" style="padding:10px 18px;border-radius:100px;font-family:inherit;font-size:.9rem;font-weight:700;cursor:pointer;transition:all .15s;'
+            + (sel ? 'background:#EC6D4A;color:#fff;border:2px solid #EC6D4A;' : 'background:#fff;color:#3A3A2E;border:2px solid #DDCBBA;')
+            + '">' + op + '</button>';
+        });
+        out += '</div></div>';
+      });
+      document.getElementById('saborGrupos').innerHTML = out;
+      const listo = grupos.every(function (g, gi) { return saborSel[gi]; });
+      const btn = document.getElementById('saborAgregar');
+      btn.disabled = !listo;
+      btn.style.opacity = listo ? '1' : '.5';
+    }
+    function elegirSabor(gi, op) {
+      saborSel[gi] = op;
+      pintarSabores();
+    }
+    function confirmarSabor() {
+      const grupos = CART_SABORES[saborProd] || [];
+      const sabor = grupos.map(function (g, gi) { return saborSel[gi]; }).join(' · ');
+      cartAdd(saborProd, sabor);
+      cerrarSabores();
+    }
+    function openCart() {
+      document.getElementById('cartDrawer').classList.add('open');
+      document.getElementById('cartOverlay').classList.add('open');
+    }
+    function closeCart() {
+      document.getElementById('cartDrawer').classList.remove('open');
+      document.getElementById('cartOverlay').classList.remove('open');
+    }
+
+    function renderCart() {
+      const n = cartCount();
+      const badge = document.getElementById('cartBadge');
+      badge.hidden = n === 0;
+      badge.textContent = n;
+      const wrap = document.getElementById('cartItems');
+      const foot = document.getElementById('cartFoot');
+      if (n === 0) {
+        wrap.innerHTML = '<p class="cart-empty">Tu carrito está vacío.<br>Agrega platillos desde el menú 🍽️</p>';
+        foot.style.display = 'none';
+        return;
+      }
+      foot.style.display = '';
+      wrap.innerHTML = Object.entries(cart).map(([key, q]) => {
+        const [id, sabor] = key.split('||');
+        const p = CART_CATALOG[id];
+        return `<div class="cart-item">
+          <div class="cart-item-info"><p class="cart-item-name">${p.nombre}</p>${sabor ? `<p class="cart-item-price" style="color:#D4502F;font-weight:700;">${sabor}</p>` : ''}<p class="cart-item-price">$${p.precio} c/u</p></div>
+          <div class="cart-item-qty">
+            <button class="qty-btn" onclick="cartQty('${key}', -1)">&#8722;</button>
+            <span class="qty-num">${q}</span>
+            <button class="qty-btn" onclick="cartQty('${key}', 1)">&#43;</button>
+          </div>
+          <strong class="cart-item-sub">$${(p.precio * q).toLocaleString('es-MX')}</strong>
+        </div>`;
+      }).join('');
+      updateCartTotal();
+    }
+
+    function updateCartTotal() {
+      const sub = cartSubtotal();
+      const totalEl = document.getElementById('cartTotal');
+      const mpBtn = document.getElementById('mpBtn');
+      const msg = document.getElementById('cartMsg');
+      const info = document.getElementById('cartZonaInfo');
+      msg.innerHTML = '';
+      mpBtn.disabled = false;
+      if (cartZona === 'otra') {
+        info.style.display = 'block';
+        info.style.color = '#D4502F';
+        info.style.background = '#F9E2D8';
+        info.style.border = '1.5px solid rgba(236,109,74,.4)';
+        info.style.borderRadius = '10px';
+        info.style.padding = '10px 12px';
+        info.style.fontWeight = '600';
+        info.innerHTML = '<span style="display:flex;gap:10px;align-items:flex-start;text-align:left;"><span style="font-size:19px;flex-shrink:0;">😕</span><span>Te pedimos una disculpa: por el momento no damos servicio en esa zona. Si crees que es un error, escríbenos por <a href="https://lappecocina.com/'&#32;+&#32;waOrderLink()&#32;+&#32;'" target="_blank" rel="noopener noreferrer" style="color:#D4502F;font-weight:800;">WhatsApp al 55 3854 6333</a> y con gusto lo revisamos.</span></span>';
+        totalEl.textContent = '$' + sub.toLocaleString('es-MX') + ' + envío';
+        mpBtn.disabled = true;
+      } else if (cartZona) {
+        info.style.display = 'block';
+        info.style.color = 'var(--green)';
+        info.style.background = 'none';
+        info.style.border = 'none';
+        info.style.padding = '0';
+        info.style.fontWeight = '700';
+        info.textContent = '🚚 ' + cartZona.colonia + ' es Zona ' + cartZona.z + ' — envío $' + cartZona.p;
+        totalEl.textContent = '$' + (sub + cartZona.p).toLocaleString('es-MX') + ' MXN';
+      } else {
+        info.style.display = 'none';
+        totalEl.textContent = '$' + sub.toLocaleString('es-MX') + ' + envío';
+      }
+
+      // Pedido mínimo en productos (sin contar el envío) — valor del Excel
+      if (sub > 0 && sub < CART_MIN) {
+        mpBtn.disabled = true;
+        msg.innerHTML = '<p class="cart-hint cart-hint-warn">🛒 El pedido mínimo es de <strong>$' + CART_MIN.toLocaleString('es-MX') + '</strong> en productos (sin incluir envío). Te faltan <strong>$' + (CART_MIN - sub).toLocaleString('es-MX') + '</strong>.</p>' + msg.innerHTML;
+      }
+    }
+
+    function waOrderLink() {
+      const lines = Object.entries(cart).map(([key, q]) => { const [id, sabor] = key.split('||'); return `- ${CART_CATALOG[id].nombre}${sabor ? ' (' + sabor + ')' : ''} x${q}`; });
+      const zona = (cartZona && cartZona !== 'otra') ? (cartZona.colonia + ', ' + cartZona.alcaldia + ' (Zona ' + cartZona.z + ', envío $' + cartZona.p + ')') : 'por confirmar';
+      const texto = `¡Hola! Quiero hacer este pedido de Lappe:\n\n${lines.join('\n')}\n\nSubtotal: $${cartSubtotal().toLocaleString('es-MX')} MXN\nZona de entrega: ${zona}`;
+      return `https://wa.me/${WA_NUM}?text=${encodeURIComponent(texto)}`;
+    }
+
+    async function checkout() {
+      const msg = document.getElementById('cartMsg');
+      if (!cartZona) {
+        msg.innerHTML = '<p class="cart-hint cart-hint-warn">Elige tu alcaldía y colonia para calcular tu envío.</p>';
+        return;
+      }
+      if (cartZona === 'otra') return;
+      if (cartSubtotal() < CART_MIN) return;
+      const datos = {
+        nombre: document.getElementById('cartNombre').value.trim(),
+        telefono: document.getElementById('cartTel').value.replace(/\D/g, ''),
+        email: document.getElementById('cartEmail').value.trim(),
+        calle: document.getElementById('cartCalle').value.trim(),
+        numext: document.getElementById('cartNumExt').value.trim(),
+        numint: document.getElementById('cartNumInt').value.trim(),
+        cp: document.getElementById('cartCP').value.trim(),
+      };
+      if (!datos.nombre || !datos.calle || !datos.numext) {
+        msg.innerHTML = '<p class="cart-hint cart-hint-warn">Completa tus datos de entrega: nombre, calle y número.</p>';
+        return;
+      }
+      if (!/^\d{10}$/.test(datos.telefono)) {
+        msg.innerHTML = '<p class="cart-hint cart-hint-warn">Escribe tu teléfono a 10 dígitos.</p>';
+        return;
+      }
+      msg.innerHTML = '';
+      const mpBtn = document.getElementById('mpBtn');
+      mpBtn.disabled = true;
+      mpBtn.textContent = 'Registrando tu pedido…';
+      let hint = '';
+      try {
+        const r = await fetch('/api/create-preference', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ items: Object.entries(cart).map(([key, qty]) => { const [id, sabor] = key.split('||'); return { id, qty, sabor }; }), colonia: cartZona.colonia, alcaldia: cartZona.alcaldia, cliente: datos })
+        });
+        const data = await r.json().catch(() => ({}));
+        if (r.ok && data.init_point) {
+          if (data.folio) {
+            closeCart();
+            document.getElementById('cartExitoFolio').textContent = data.folio;
+            document.getElementById('cartExitoTotal').textContent = 'Total a pagar: $' + Number(data.total).toLocaleString('es-MX') + ' MXN';
+            document.getElementById('cartExitoMP').href = data.init_point;
+            const ex = document.getElementById('cartExito');
+            ex.style.display = 'flex';
+            let seg = 10;
+            const cta = document.getElementById('cartExitoCuenta');
+            cta.textContent = 'Te llevamos a Mercado Pago en ' + seg + ' segundos…';
+            const timer = setInterval(function () {
+              seg--;
+              if (seg <= 0) { clearInterval(timer); window.location.href = data.init_point; return; }
+              cta.textContent = 'Te llevamos a Mercado Pago en ' + seg + ' segundos…';
+            }, 1000);
+            mpBtn.disabled = false;
+            mpBtn.textContent = 'Pagar con Mercado Pago';
+            return;
+          }
+          window.location.href = data.init_point; return;
+        }
+        if (data.error === 'sin_stock') {
+          hint = 'Esta semana solo nos quedan <strong>' + data.disponible + '</strong> de <strong>' + data.producto + '</strong>. Ajusta tu pedido o escríbenos por <a href="https://lappecocina.com/'&#32;+&#32;waOrderLink()&#32;+&#32;'" target="_blank" rel="noopener noreferrer">WhatsApp</a> para un pedido especial.';
+          msg.innerHTML = `<p class="cart-hint cart-hint-warn">${hint}</p>`;
+          mpBtn.disabled = false;
+          mpBtn.textContent = 'Pagar con Mercado Pago';
+          return;
+        }
+        if (data.error === 'datos_incompletos') {
+          hint = 'Revisa tus datos de entrega: nombre, teléfono a 10 dígitos, calle y número.';
+          msg.innerHTML = `<p class="cart-hint cart-hint-warn">${hint}</p>`;
+          mpBtn.disabled = false;
+          mpBtn.textContent = 'Pagar con Mercado Pago';
+          return;
+        }
+        hint = r.status === 503
+          ? `Los pagos en línea se activan muy pronto. Mientras tanto, termina tu pedido por <a href="https://lappecocina.com/${waOrderLink()}" target="_blank" rel="noopener noreferrer">WhatsApp</a> 👉`
+          : `No pudimos conectar con Mercado Pago. Intenta de nuevo o pide por <a href="https://lappecocina.com/${waOrderLink()}" target="_blank" rel="noopener noreferrer">WhatsApp</a>.`;
+      } catch (e) {
+        hint = `No pudimos conectar con Mercado Pago. Intenta de nuevo o pide por <a href="https://lappecocina.com/${waOrderLink()}" target="_blank" rel="noopener noreferrer">WhatsApp</a>.`;
+      }
+      msg.innerHTML = `<p class="cart-hint cart-hint-warn">${hint}</p>`;
+      mpBtn.disabled = false;
+      mpBtn.textContent = 'Pagar con Mercado Pago';
+    }
+
+    // ---- SINCRONIZACIÓN CON EL EXCEL (pestaña "Productos") ----
+    // El cliente edita en su hoja: Descripción, Precio, Activo (SÍ/NO),
+    // Categoría y Stock — y la página obedece al cargar. Si la hoja no
+    // responde, se quedan los valores fijos del HTML.
+    function csvParseCliente(t) {
+      const filas = []; let fila = []; let cel = ''; let dentro = false;
+      for (let i = 0; i < t.length; i++) {
+        const c = t[i];
+        if (dentro) { if (c === '"') { if (t[i + 1] === '"') { cel += '"'; i++; } else dentro = false; } else cel += c; }
+        else if (c === '"') dentro = true;
+        else if (c === ',') { fila.push(cel); cel = ''; }
+        else if (c === '\n') { fila.push(cel); filas.push(fila); fila = []; cel = ''; }
+        else if (c !== '\r') cel += c;
+      }
+      if (cel !== '' || fila.length) { fila.push(cel); filas.push(fila); }
+      return filas;
+    }
+    const normEx = s => String(s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').trim();
+    // Celdas de control de la pestaña "Menú" del Excel: WhatsApp, correo,
+    // cierre de pedidos (fecha y hora exactas) y pedido mínimo del menú.
+    // El cliente edita la celda y la página obedece al recargar.
+    window.lappeCeldasPromise = (async function () {
+      const out = {};
+      try {
+        const d = await fetch('/api/pedido-semanal').then(function (r) { return r.json(); });
+        const c = (d && d.celdas) || {};
+        if (c.minimo) out.minimo = Number(c.minimo);
+        if (c.whatsapp) {
+          const dgt = String(c.whatsapp).replace(/\D/g, '');
+          if (dgt.length >= 10) out.whatsapp = dgt.length === 10 ? '521' + dgt : dgt;
+        }
+        if (c.correo && String(c.correo).indexOf('@') > 0) out.correo = c.correo;
+        if (c.cierreStr) {
+          const m = String(c.cierreStr).match(/(\d{1,2})\/(\d{1,2})\/(\d{4})\s+(\d{1,2}):(\d{2})/);
+          if (m) {
+            const dias = ['domingo', 'lunes', 'martes', 'miércoles', 'jueves', 'viernes', 'sábado'];
+            const meses = ['enero', 'febrero', 'marzo', 'abril', 'mayo', 'junio', 'julio', 'agosto', 'septiembre', 'octubre', 'noviembre', 'diciembre'];
+            const dd = +m[1], mm = +m[2] - 1, yy = +m[3], hh = +m[4], mi = +m[5];
+            const h12 = (hh % 12) || 12;
+            out.cierre = {
+              ms: Date.UTC(yy, mm, dd, hh + 6, mi), // hora CDMX (UTC-6)
+              fecha: dias[new Date(Date.UTC(yy, mm, dd)).getUTCDay()] + ' ' + dd + ' de ' + meses[mm],
+              hora: h12 + ':' + String(mi).padStart(2, '0') + ' ' + (hh >= 12 ? 'pm' : 'am'),
+            };
+          }
+        }
+      } catch (e) {}
+      return out;
+    })();
+    function telBonito(num) {
+      const t = String(num).slice(-10);
+      return '+52 ' + t.slice(0, 2) + ' ' + t.slice(2, 6) + ' ' + t.slice(6);
+    }
+    (async function sincronizarProductos() {
+      try {
+        const r = await fetch('https://docs.google.com/spreadsheets/d/1d9t_nrMI2zqFHez0pzjYil3oR-b-aj4reZ8whgGdf_4/gviz/tq?tqx=out:csv&sheet=Productos');
+        const csv = await r.text();
+        if (!csv.startsWith('"')) return;
+        const idPorNombre = {};
+        Object.keys(CART_CATALOG).forEach(function (id) { idPorNombre[normEx(CART_CATALOG[id].nombre)] = id; });
+        const porProducto = {};
+        csvParseCliente(csv).slice(1).forEach(function (f) {
+          const id = idPorNombre[normEx(f[0])];
+          if (!id) return;
+          const p = porProducto[id] = porProducto[id] || { desc: '', precio: null, cat: '', hayActiva: false, variantes: {} };
+          const on = normEx(f[5]).indexOf('si') === 0;
+          if (on) p.hayActiva = true;
+          if (!p.desc && f[1]) p.desc = f[1];
+          if (p.precio === null && Number(f[6])) p.precio = Number(f[6]);
+          if (!p.cat && f[4]) p.cat = f[4];
+          const saborKey = String(f[3] || '').split(' — ').slice(1).join(' — ').trim();
+          p.variantes[saborKey] = { on: on, stock: Math.max(0, (Number(f[7]) || 0) - (Number(f[8]) || 0)) }; // lo que RESTA (stock − pedidos)
+        });
+        // Pedido mínimo de la tienda: celda "Pedido Mínimo →" de la pestaña Productos
+        csvParseCliente(csv).forEach(function (f) {
+          for (let i = 0; i < f.length - 1; i++) {
+            if (normEx(f[i]).indexOf('pedido minimo') === 0) {
+              const v = Number(String(f[i + 1]).replace(/[^0-9.]/g, ''));
+              if (v) CART_MIN = v;
+            }
+          }
+        });
+        const CAT_TO_TAB = { 'antojitos mexicanos': 'tab-antojitos', 'para sorprender': 'tab-sorprender', 'para el apuro': 'tab-apuro' };
+        Object.keys(porProducto).forEach(function (id) {
+          const p = porProducto[id];
+          if (p.precio) CART_CATALOG[id].precio = p.precio; // el cobro real lo fija el servidor
+          // Stock espejo para los topes de los botones
+          Object.keys(p.variantes).forEach(function (k) {
+            if (k === '') { if (typeof CART_STOCK[id] === 'number') CART_STOCK[id] = p.variantes[k].stock; }
+            else if (typeof CART_STOCK[id] === 'object') CART_STOCK[id][k] = p.variantes[k].on ? p.variantes[k].stock : 0;
+          });
+          // Sabores desactivados fuera del selector (primer grupo)
+          if (CART_SABORES[id]) {
+            const activas = {};
+            Object.keys(p.variantes).forEach(function (k) { if (p.variantes[k].on) activas[k.split(' · ')[0]] = true; });
+            if (Object.keys(p.variantes).some(function (k) { return k !== ''; })) {
+              CART_SABORES[id][0].ops = CART_SABORES[id][0].ops.filter(function (o) { return activas[o]; });
+            }
+          }
+          const card = document.querySelector('.menu-item-card[data-pid="' + id + '"]');
+          if (!card) return;
+          if (p.desc) { const d = card.querySelector('.menu-item-desc'); if (d) d.textContent = p.desc; }
+          if (p.precio) { const pe = card.querySelector('.menu-item-price'); if (pe) pe.textContent = '$' + p.precio.toLocaleString('es-MX'); }
+          card.style.display = p.hayActiva ? '' : 'none'; // Activo NO en todas sus filas = desaparece
+          const tabId = CAT_TO_TAB[normEx(p.cat)];
+          if (tabId) {
+            const grid = document.querySelector('#' + tabId + ' .menu-items-grid');
+            if (grid && !grid.contains(card)) grid.appendChild(card); // cambio de categoría
+          }
+        });
+        // ---- BLOQUE DE TEMPORADA (parte baja de la pestaña Productos) ----
+        // Filas con Categoría que contenga "temporada" se vuelven productos
+        // dinámicos: tarjeta, precio, stock y hasta la pestaña aparecen solos.
+        const esc = function (s) { return String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;'); };
+        const slugEx = function (s) { return normEx(s).replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, ''); };
+        const todas = csvParseCliente(csv);
+        let hookT = '', condT = '', fotoT = '';
+        todas.forEach(function (f, i) {
+          const et = normEx(f[0]);
+          const sig = todas[i + 1] ? String(todas[i + 1][0] || '').trim() : '';
+          if (et === 'hook') hookT = sig;
+          else if (et === 'condiciones') condT = sig;
+          else if (et === 'foto') fotoT = sig;
+        });
+        const temporada = {};
+        todas.forEach(function (f) {
+          if (normEx(f[4]).indexOf('temporada') === -1) return;
+          if (!f[0] || normEx(f[0]) === 'producto' || !Number(f[6])) return;
+          const nombre = String(f[0]).trim();
+          const id = slugEx(nombre);
+          const p = temporada[id] = temporada[id] || { nombre: nombre, desc: String(f[1] || '').trim(), precio: Number(f[6]), variantes: [], stockPor: {}, activo: false };
+          const on = normEx(f[5]).indexOf('si') === 0;
+          if (on) p.activo = true;
+          const variante = String(f[2] || '').trim();
+          const resta = Math.max(0, (Number(f[7]) || 0) - (Number(f[8]) || 0));
+          if (variante) { p.variantes.push(variante); p.stockPor[variante] = on ? resta : 0; }
+          else p.stockPor[''] = on ? resta : 0;
+        });
+        const activosT = Object.keys(temporada).filter(function (id) { return temporada[id].activo; });
+        if (activosT.length) {
+          document.getElementById('btn-temporada').style.display = '';
+          // La pestaña de hasta la izquierda es la que recibe al visitante
+          if (!usuarioEligioTab) switchTab('temporada');
+          const mMin = condT.match(/m[íi]nimo\s+(\d+)/i);
+          const minPiezas = mMin ? Number(mMin[1]) : 1;
+          if (hookT) { const el = document.getElementById('tempHook'); el.textContent = hookT; el.style.display = 'block'; }
+          if (condT) { const el = document.getElementById('tempCond'); el.innerHTML = '<span style="color:#E4372E;font-size:1.15em;">&iexcl;</span> ' + esc(condT) + ' <span style="color:#E4372E;font-size:1.15em;">!</span>'; el.style.display = 'block'; }
+          activosT.forEach(function (id) {
+            const p = temporada[id];
+            CART_CATALOG[id] = { nombre: p.nombre, precio: p.precio };
+            CART_STOCK[id] = p.variantes.length ? p.stockPor : (p.stockPor[''] || 0);
+            if (p.variantes.length) CART_SABORES[id] = [{ t: 'Sabor', ops: p.variantes.slice() }];
+            if (minPiezas > 1) TEMP_MIN[id] = minPiezas;
+            const card = document.createElement('div');
+            card.className = 'menu-item-card';
+            card.dataset.pid = id;
+            const foto = fotoT.indexOf('http') === 0 ? fotoT : ('lappe-' + id + '.jpg');
+            card.innerHTML = '<img class="menu-item-img" src="https://lappecocina.com/'&#32;+&#32;esc(foto)&#32;+&#32;'" alt="' + esc(p.nombre) + ' Lappe" onerror="this.style.display=\'none\'">' +
+              '<div class="menu-item-info"><p class="menu-item-name">' + esc(p.nombre) + '</p><p class="menu-item-desc">' + esc(p.desc) + '</p></div>' +
+              '<div class="menu-item-buy"><span class="menu-item-price">$' + p.precio.toLocaleString('es-MX') + '</span></div>';
+            const btn = document.createElement('button');
+            btn.className = 'btn-agregar';
+            btn.textContent = '+ Agregar';
+            btn.onclick = function () { addToCart(id); };
+            card.querySelector('.menu-item-buy').appendChild(btn);
+            document.getElementById('tempGrid').appendChild(card);
+          });
+          // Recuperar del carrito guardado los productos de temporada (la
+          // limpieza inicial los descarta porque aún no existían en el catálogo)
+          try {
+            const guardado = JSON.parse(localStorage.getItem('lappe-cart') || '{}');
+            Object.keys(guardado).forEach(function (k) {
+              const id = k.split('||')[0];
+              if (temporada[id] && temporada[id].activo && !cart[k] && guardado[k] >= 1) cart[k] = guardado[k];
+            });
+          } catch (e) {}
+        }
+        renderCart();
+      } catch (e) {}
+      // Celdas de control de la pestaña Menú: mínimo, WhatsApp y correo
+      try {
+        const c = await window.lappeCeldasPromise;
+        if (c.minimo) {
+          MS_MIN = c.minimo;
+          const et = document.getElementById('msMinEtiqueta');
+          if (et) et.textContent = '$' + MS_MIN.toLocaleString('es-MX');
+          if (typeof msResumen === 'function') try { msResumen(); } catch (e) {}
+        }
+        if (c.whatsapp && c.whatsapp !== WA_NUM) {
+          WA_NUM = c.whatsapp;
+          MS_WA = c.whatsapp;
+          const t10 = c.whatsapp.slice(-10);
+          const telTxt = t10.slice(0, 2) + ' ' + t10.slice(2, 6) + ' ' + t10.slice(6);
+          document.querySelectorAll('a[href*="wa.me/"]').forEach(function (a) {
+            a.href = a.href.replace(/wa\.me\/\d+/, 'wa.me/' + c.whatsapp);
+            // El número visible se actualiza SOLO en nodos de texto — nunca
+            // tocar los hijos del link (el botón flotante trae su logo SVG)
+            a.childNodes.forEach(function (n) {
+              if (n.nodeType === 3) n.nodeValue = n.nodeValue.replace(/\d{2}[\s-]?\d{4}[\s-]?\d{4}/, telTxt);
+            });
+          });
+          const wae = document.getElementById('msExitoWA');
+          if (wae) wae.textContent = '📱 ' + telBonito(c.whatsapp);
+        }
+        if (c.correo) {
+          document.querySelectorAll('a[href^="mailto:"]').forEach(function (a) {
+            a.href = 'mailto:' + c.correo;
+            if (a.textContent.indexOf('@') > 0) a.textContent = c.correo;
+          });
+        }
+      } catch (e) {}
+    })();
+
+    // Mini-carrusel de la foto de Roscas (alterna entre sus 2 presentaciones)
+    (function () {
+      const img = document.getElementById('roscaFoto');
+      if (!img) return;
+      const fotos = img.getAttribute('data-fotos').split(',');
+      let fi = 0;
+      img.style.transition = 'opacity .5s ease';
+      setInterval(function () {
+        img.style.opacity = '0';
+        setTimeout(function () {
+          fi = (fi + 1) % fotos.length;
+          img.src = fotos[fi];
+          img.style.opacity = '1';
+        }, 500);
+      }, 3500);
+    })();
+
+    // Galería: visor + "ver más"
+    (function () {
+      const visor = document.getElementById('fotoVisor');
+      const fvImg = document.getElementById('fvImg');
+      const fvNombre = document.getElementById('fvNombre');
+      const fvPrecio = document.getElementById('fvPrecio');
+      document.querySelectorAll('.glr-masonry figure').forEach(function (f) {
+        f.addEventListener('click', function () {
+          const img = f.querySelector('img');
+          const cap = f.querySelector('figcaption');
+          fvImg.src = img.src;
+          fvImg.alt = img.alt;
+          fvNombre.textContent = cap ? cap.textContent : '';
+          fvPrecio.textContent = '';
+          visor.classList.add('on');
+          document.body.style.overflow = 'hidden';
+        });
+      });
+    })();
+    function glrToggle() {
+      const w = document.getElementById('glrWrap');
+      const b = document.getElementById('glrBtn');
+      const abierto = w.classList.toggle('open');
+      b.textContent = abierto ? 'Ver menos' : 'Ver más fotos 📸';
+      if (!abierto) document.getElementById('galeria').scrollIntoView({ behavior: 'smooth' });
+    }
+
+    // Selector "Pedir ahora": elige entre Productos o Menú Semanal
+    function abrirPedir(e) {
+      if (e) e.preventDefault();
+      document.getElementById('pedirModal').classList.add('on');
+      document.body.style.overflow = 'hidden';
+    }
+    function cerrarPedir() {
+      document.getElementById('pedirModal').classList.remove('on');
+      document.body.style.overflow = '';
+    }
+    document.getElementById('pedirModal').addEventListener('click', function (e) {
+      if (e.target === this) cerrarPedir();
+    });
+    document.addEventListener('keydown', function (e) { if (e.key === 'Escape') cerrarPedir(); });
+
+    // Visor de fotos: clic en la foto del platillo → se ve en grande
+    (function () {
+      const visor = document.getElementById('fotoVisor');
+      const fvImg = document.getElementById('fvImg');
+      const fvNombre = document.getElementById('fvNombre');
+      const fvPrecio = document.getElementById('fvPrecio');
+
+      function abrir(img) {
+        const card = img.closest('.menu-item-card');
+        fvImg.src = img.src;
+        fvImg.alt = img.alt || '';
+        const nombre = card && card.querySelector('.menu-item-name');
+        const precio = card && card.querySelector('.menu-item-price');
+        fvNombre.textContent = nombre ? nombre.textContent.trim() : '';
+        fvPrecio.textContent = precio ? precio.textContent.trim() : '';
+        visor.classList.add('on');
+        document.body.style.overflow = 'hidden';
+      }
+      function cerrar() {
+        visor.classList.remove('on');
+        document.body.style.overflow = '';
+      }
+
+      document.querySelectorAll('.menu-item-img').forEach(function (img) {
+        img.addEventListener('click', function (e) { e.stopPropagation(); abrir(img); });
+      });
+      visor.addEventListener('click', cerrar);
+      document.addEventListener('keydown', function (e) { if (e.key === 'Escape') cerrar(); });
+    })();
+
+    // Inyectar botón "Agregar" en cada tarjeta del menú
+    const NAME_TO_ID = {
+      'Quesadillas': 'quesadillas', 'Pastor árabe': 'pastor-arabe', 'Cochinita pibil': 'cochinita',
+      'Chicharrón en salsa': 'chicharron', 'Carne al pastor': 'pastor', 'Carne en su jugo': 'carne-jugo',
+      'Tacos campechanos': 'campechanos', 'Quiches': 'quiches', 'Lasagna': 'lasagna', 'Ravioles': 'ravioles',
+      'Crepas': 'crepas', 'Roscas': 'roscas', 'Salsas gourmet': 'salsas-gourmet',
+      'Salsas mexicanas': 'salsas-mexicanas', 'Mini tacos': 'mini-tacos',
+      'Tequeños de queso': 'tequenos'
+    };
+    document.querySelectorAll('.menu-item-card').forEach(card => {
+      const name = card.querySelector('.menu-item-name');
+      const id = name && NAME_TO_ID[name.textContent.trim()];
+      if (!id) return;
+      card.dataset.pid = id;
+      const priceEl = card.querySelector('.menu-item-price');
+      const buy = document.createElement('div');
+      buy.className = 'menu-item-buy';
+      priceEl.replaceWith(buy);
+      buy.appendChild(priceEl);
+      const btn = document.createElement('button');
+      btn.className = 'btn-agregar';
+      btn.textContent = '+ Agregar';
+      btn.onclick = () => addToCart(id);
+      buy.appendChild(btn);
+    });
+
+    // Banner con el resultado del pago (regreso desde Mercado Pago)
+    (function () {
+      const params = new URLSearchParams(window.location.search);
+      const pago = params.get('pago');
+      const cfg = {
+        exitoso:   { cls: 'ok',   text: '✅ ¡Pago recibido! Gracias por tu pedido — te contactamos por WhatsApp para coordinar la entrega.' },
+        pendiente: { cls: 'warn', text: '⏳ Tu pago está en proceso. En cuanto se confirme te contactamos para coordinar la entrega.' },
+        fallido:   { cls: 'err',  text: '❌ El pago no se completó. Puedes intentarlo de nuevo o pedir por WhatsApp.' }
+      }[pago];
+      if (!cfg) return;
+      if (pago === 'exitoso') { cart = {}; saveCart(); }
+      const folioPago = params.get('pedido') || '';
+      const waAviso = 'https://wa.me/' + WA_NUM + '?text=' + encodeURIComponent(
+        '¡Hola Lappe! 🧡 Te hice un pedido en la página.' +
+        (folioPago ? '\n🎫 Folio: ' + folioPago : '') +
+        (pago === 'exitoso' ? '\n✅ Ya realicé el pago — aquí te comparto mi comprobante 🧾' : '\n⏳ Mi pago está en proceso.')
+      );
+      const btnWa = pago === 'fallido' ? '' : `<a href="https://lappecocina.com/${waAviso}" target="_blank" rel="noopener" style="background:#25D366;color:#fff;font-weight:800;padding:9px 16px;border-radius:100px;text-decoration:none;white-space:nowrap;flex-shrink:0;">📲 Avísanos por WhatsApp</a>`;
+      const b = document.createElement('div');
+      b.className = 'pago-banner ' + cfg.cls;
+      b.innerHTML = `<span>${cfg.text}</span>` + btnWa + `<button onclick="this.parentElement.remove()" aria-label="Cerrar">&times;</button>`;
+      document.body.appendChild(b);
+      history.replaceState(null, '', window.location.pathname);
+    })();
+
+    document.getElementById('cartAlc').addEventListener('change', cartOnAlcaldia);
+    document.getElementById('cartCol').addEventListener('change', cartOnColonia);
+    renderCart();
+  </script>
+
+<script>
+const MS_URL = 'https://script.google.com/macros/s/AKfycbxTWhJF4jbMfdnXZA9IYSsCn3Tz17LBpAzcgzUblzHmOGSDpVabSADBVTmltEMzqN16/exec';
+let MS_WA = '5215538546333'; // se actualiza con la celda "Whatsapp" del Excel
+
+let msMenu = null;
+let msCatalogo = {};
+let msColonias = [];
+const msSel = {};
+let msZona = null; // {z, p}
+
+const msNorm = s => String(s || '').toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').trim();
+
+(function () {
+  const st = document.createElement('style');
+  st.textContent = '.ms-lbl{display:block;font-size:11px;font-weight:700;color:#8A8A7A;margin-bottom:6px;text-transform:uppercase;letter-spacing:.5px}'
+    + '.ms-in{width:100%;padding:12px 14px;border:1.5px solid #DDCBBA;border-radius:10px;font-size:14px;font-family:inherit;box-sizing:border-box;background:#fff;color:#3A3A2E}'
+    + '.ms-in:focus{outline:none;border-color:#EC6D4A;box-shadow:0 0 0 3px rgba(236,109,74,.12)}'
+    + '.ms-in:disabled{background:#F5EEE1;color:#8A8A7A}'
+    + '.ms-step{width:34px;height:34px;border-radius:9px;font-size:17px;font-weight:700;cursor:pointer;line-height:1;font-family:inherit}';
+  document.head.appendChild(st);
+})();
+
+function msParseCierre(cierreStr) {
+  if (!cierreStr) return null;
+  const meses = { enero: 0, febrero: 1, marzo: 2, abril: 3, mayo: 4, junio: 5, julio: 6, agosto: 7, septiembre: 8, setiembre: 8, octubre: 9, noviembre: 10, diciembre: 11 };
+  const m = String(cierreStr).toLowerCase().match(/(\d{1,2})\s+de\s+([a-záéíóúñ]+)/);
+  if (!m) return null;
+  const dia = parseInt(m[1], 10);
+  const mes = meses[m[2]];
+  if (mes === undefined || !(dia >= 1 && dia <= 31)) return null;
+  const y = new Date().getUTCFullYear();
+  let dl = Date.UTC(y, mes, dia, 26, 0, 0);
+  if (dl < Date.now() - 15552000000) dl = Date.UTC(y + 1, mes, dia, 26, 0, 0);
+  return dl;
+}
+
+window.addEventListener('load', async function () {
+  // Precalentar los servidores de pago (llenan su caché del Excel mientras el cliente navega)
+  window.lappeCupoPromise = fetch('/api/pedido-semanal').then(function (r) { return r.json(); }).catch(function () { return {}; });
+  fetch('/api/create-preference').catch(function () {});
+
+  // Banner de regreso de Mercado Pago
+  const params = new URLSearchParams(window.location.search);
+  if (params.get('pago')) {
+    const est = params.get('pago'), folio = params.get('pedido') || '';
+    const box = document.getElementById('msPagado');
+    const waAvisoMs = function (extra) {
+      return 'https://wa.me/' + MS_WA + '?text=' + encodeURIComponent('¡Hola Lappe! 🧡 Te hice un pedido del menú semanal.\n🎫 Folio: ' + folio + extra);
+    };
+    const btnWaMs = function (extra) {
+      return '<br><a href="https://lappecocina.com/'&#32;+&#32;waAvisoMs(extra)&#32;+&#32;'" target="_blank" rel="noopener" style="display:inline-block;margin-top:10px;background:#25D366;color:#fff;font-weight:800;padding:11px 22px;border-radius:100px;text-decoration:none;">📲 Avísanos por WhatsApp</a>';
+    };
+    if (est === 'exitoso') { box.innerHTML = '🎉 ¡Pago recibido! Tu pedido ' + folio + ' está confirmado. Gracias 🧡' + btnWaMs('\n✅ Ya realicé el pago — aquí te comparto mi comprobante 🧾'); box.style.display = 'block'; }
+    else if (est === 'pendiente') { box.innerHTML = '⏳ Tu pago del pedido ' + folio + ' está en proceso. Te avisaremos en cuanto se acredite.' + btnWaMs('\n⏳ Mi pago está en proceso.'); box.style.display = 'block'; }
+  }
+
+  const form = document.getElementById('msForm');
+  if (form) form.addEventListener('submit', msSubmit);
+  const grupos = document.getElementById('msGrupos');
+  if (grupos) grupos.addEventListener('click', function (e) {
+    const btn = e.target.closest('button[data-id]');
+    if (!btn) return;
+    msAdd(btn.getAttribute('data-id'), Number(btn.getAttribute('data-d')));
+  });
+  document.getElementById('msAlc').addEventListener('change', msOnAlcaldia);
+  document.getElementById('msCol').addEventListener('change', msOnColonia);
+
+  try {
+    window.lappeMenuPromise = window.lappeMenuPromise || fetch(MS_URL).then(function (x) { return x.json(); });
+    msMenu = await window.lappeMenuPromise;
+
+    msCatalogo = {};
+    (msMenu.entradas || []).forEach(function (x, i) { msCatalogo['e' + (i + 1)] = { nombre: x.nombre, precio: Number(x.precio) || 0, cat: 'entradas' }; });
+    (msMenu.fuertes || []).forEach(function (x, i) { msCatalogo['f' + (i + 1)] = { nombre: x.nombre, precio: Number(x.precio) || 0, cat: 'fuertes' }; });
+    if (msMenu.especial && msMenu.especial.nombre) msCatalogo['fesp'] = { nombre: msMenu.especial.nombre, precio: Number(msMenu.especial.precio) || 0, cat: 'especial' };
+    (msMenu.guarniciones || []).forEach(function (x, i) { msCatalogo['g' + (i + 1)] = { nombre: x.nombre, precio: Number(x.precio) || 0, cat: 'guarniciones' }; });
+    msColonias = (msMenu.zonas && msMenu.zonas.colonias) || [];
+
+    const f = msMenu.fechas || {};
+    if (f.semanal) document.getElementById('msBadgeSemana').textContent = '📦 Menú Semanal: ' + f.semanal;
+    const pill = document.getElementById('msFechas');
+    // Cierre: manda la celda "Cierre Pedidos" del Excel; si no está, se usa
+    // la fecha del texto del menú (miércoles 8 pm)
+    const celdas = await (window.lappeCeldasPromise || Promise.resolve({}));
+    let cierreTexto = f.cierre || 'miércoles';
+    let cierreHora = '8:00 pm';
+    let cierreMs = msParseCierre(f.cierre);
+    if (celdas.cierre) {
+      cierreMs = celdas.cierre.ms;
+      cierreTexto = celdas.cierre.fecha;
+      cierreHora = celdas.cierre.hora;
+    }
+    window.MS_CIERRE_TXT = cierreTexto;
+    window.MS_CIERRE_HORA = cierreHora;
+    pill.textContent = '⏰ Cierre: ' + cierreTexto + ' ' + cierreHora;
+    if (f.pago) document.querySelectorAll('.ms-pago-fecha').forEach(function (el) { el.textContent = f.pago; });
+    document.querySelectorAll('.ms-cierre-fecha').forEach(function (el) { el.textContent = cierreTexto; });
+    document.querySelectorAll('.ms-cierre-hora').forEach(function (el) { el.textContent = cierreHora; });
+
+    // Ventana de pedidos: lunes 8:00 am (CDMX) → el cierre del Excel
+    const mx = new Date(new Date().toLocaleString('en-US', { timeZone: 'America/Mexico_City' }));
+    const d = mx.getDay(), hr = mx.getHours() + mx.getMinutes() / 60;
+    const cierrePasado = cierreMs && Date.now() > cierreMs;
+    let ventanaAbierta;
+    if (cierreMs) {
+      const lunes8 = new Date(mx);
+      lunes8.setDate(mx.getDate() - ((mx.getDay() + 6) % 7));
+      lunes8.setHours(8, 0, 0, 0);
+      ventanaAbierta = mx >= lunes8 && !cierrePasado;
+    } else {
+      ventanaAbierta = (d === 1 && hr >= 8) || d === 2 || (d === 3 && hr < 20);
+    }
+
+    const cupo = await (window.lappeCupoPromise || Promise.resolve({}));
+    if (cupo && cupo.cupoLleno) {
+      document.getElementById('msCerradoTxt').innerHTML = 'El cupo de pedidos de esta semana ya se llenó 🙏. Los pedidos vuelven a abrir el <strong>lunes a las 8:00 am</strong>.';
+      document.getElementById('msCerrado').style.display = 'block';
+    } else if (ventanaAbierta && !cierrePasado) {
+      document.getElementById('msFlujo').style.display = 'block';
+      msRender();
+      msLlenarAlcaldias();
+    } else {
+      document.getElementById('msCerradoTxt').innerHTML = cierrePasado
+        ? 'El cierre fue el <strong>' + cierreTexto + ' a las ' + cierreHora + '</strong>.'
+        : 'Los pedidos abren cada <strong>lunes a las 8:00 am</strong> y cierran el <strong>' + cierreTexto + ' a las ' + cierreHora + '</strong>.';
+      document.getElementById('msCerrado').style.display = 'block';
+    }
+  } catch (e) {
+    document.getElementById('msGrupos').innerHTML = '<p style="color:#D4502F;text-align:center;padding:20px;">No pudimos cargar el menú. Recarga la página o escríbenos por WhatsApp.</p>';
+    document.getElementById('msFlujo').style.display = 'block';
+  }
+});
+
+// ---- PLATILLOS ----
+function msRender() {
+  const grupos = [
+    { titulo: '🍲 Entradas', ids: Object.keys(msCatalogo).filter(function (k) { return msCatalogo[k].cat === 'entradas'; }) },
+    { titulo: '🍽️ Platos fuertes', ids: Object.keys(msCatalogo).filter(function (k) { return msCatalogo[k].cat === 'fuertes' || msCatalogo[k].cat === 'especial'; }) },
+    { titulo: '🥗 Guarniciones', ids: Object.keys(msCatalogo).filter(function (k) { return msCatalogo[k].cat === 'guarniciones'; }) }
+  ];
+  let out = '';
+  grupos.forEach(function (g) {
+    if (!g.ids.length) return;
+    out += '<div style="background:#fff;border-radius:16px;box-shadow:0 4px 20px rgba(0,0,0,0.06);padding:20px 22px;margin-bottom:16px;">'
+      + '<h4 style="margin:0 0 8px;font-size:1.05rem;font-weight:800;color:#EC6D4A;">' + g.titulo + '</h4>';
+    g.ids.forEach(function (id) {
+      const item = msCatalogo[id];
+      const qty = msSel[id] || 0;
+      const esp = item.cat === 'especial';
+      out += '<div style="display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 0;border-bottom:1px solid #EDE4D2;">'
+        + '<div style="flex:1;min-width:0;">' + (esp ? '<span style="background:#EC6D4A;color:#fff;font-size:10px;font-weight:800;padding:2px 8px;border-radius:999px;margin-right:6px;">⭐ ESPECIAL</span>' : '')
+        + '<span style="font-weight:600;font-size:14.5px;">' + item.nombre + '</span>'
+        + ' <span style="color:#EC6D4A;font-weight:700;font-size:13.5px;white-space:nowrap;">$' + item.precio + '</span></div>'
+        + '<div style="display:flex;align-items:center;gap:2px;flex-shrink:0;">'
+        + '<button type="button" class="ms-step" data-id="' + id + '" data-d="-1" style="border:1.5px solid #DDCBBA;background:transparent;color:#3A3A2E;">−</button>'
+        + '<span style="min-width:32px;text-align:center;font-weight:800;">' + qty + '</span>'
+        + '<button type="button" class="ms-step" data-id="' + id + '" data-d="1" style="border:none;background:#EC6D4A;color:#fff;">+</button>'
+        + '</div></div>';
+    });
+    out += '</div>';
+  });
+  document.getElementById('msGrupos').innerHTML = out || '<p style="color:#8A8A7A;text-align:center;padding:20px;">El menú de esta semana estará disponible muy pronto.</p>';
+}
+
+function msAdd(id, delta) {
+  const actual = msSel[id] || 0;
+  if (delta > 0 && actual >= 10) { msAvisoMax(); return; } // tope: 10 por platillo
+  const next = Math.max(0, Math.min(10, actual + delta));
+  if (next === 0) delete msSel[id];
+  else msSel[id] = next;
+  msRender();
+  msResumen();
+}
+
+// Letrero flotante al intentar pedir más de 10 piezas de un platillo
+let msAvisoTimer = null;
+function msAvisoMax() {
+  let t = document.getElementById('msAvisoMax');
+  if (!t) {
+    t = document.createElement('div');
+    t.id = 'msAvisoMax';
+    t.style.cssText = 'position:fixed;left:50%;bottom:24px;transform:translateX(-50%);z-index:1300;background:#3A3A2E;color:#F5EEE1;padding:14px 20px;border-radius:14px;font-size:14px;font-weight:600;box-shadow:0 10px 30px rgba(0,0,0,.3);max-width:min(92vw,420px);text-align:center;line-height:1.5;opacity:0;transition:opacity .3s ease;';
+    t.innerHTML = 'El m&aacute;ximo por platillo es <strong>10 piezas</strong>. Para pedidos m&aacute;s grandes, escr&iacute;benos por <a href="https://wa.me/5215538546333?text=Hola%20Lappe!%20Quiero%20hacer%20un%20pedido%20de%20m%C3%A1s%20de%2010%20piezas%20del%20men%C3%BA%20semanal%20%F0%9F%8D%BD%EF%B8%8F" target="_blank" rel="noopener" style="color:#EC6D4A;font-weight:800;">WhatsApp 💬</a>';
+    document.body.appendChild(t);
+  }
+  requestAnimationFrame(function () { t.style.opacity = '1'; });
+  clearTimeout(msAvisoTimer);
+  msAvisoTimer = setTimeout(function () { t.style.opacity = '0'; }, 6000);
+}
+
+// ---- ZONA AUTOMÁTICA (alcaldía → colonia → zona) ----
+function msLlenarAlcaldias() {
+  const sa = document.getElementById('msAlc');
+  const alcs = (msMenu.zonas && msMenu.zonas.alcaldias) || [];
+  if (!alcs.length) { sa.innerHTML = '<option value="">No se pudo cargar la lista</option>'; return; }
+  let o = '<option value="">Selecciona tu alcaldía o municipio</option>';
+  alcs.forEach(function (a) { o += '<option>' + a + '</option>'; });
+  sa.innerHTML = o;
+}
+
+function msOnAlcaldia() {
+  const alc = document.getElementById('msAlc').value;
+  const sc = document.getElementById('msCol');
+  msZona = null;
+  const cols = msColonias.filter(function (c) { return c.a === alc; });
+  if (!alc || !cols.length) {
+    sc.innerHTML = '<option value="">' + (alc ? '—' : 'Primero elige tu alcaldía') + '</option>';
+    sc.disabled = true;
+    if (alc && !cols.length) msPintarZona('no');
+    else msPintarZona('');
+  } else {
+    let o = '<option value="">Selecciona tu colonia</option>';
+    cols.forEach(function (c) { o += '<option>' + c.c + '</option>'; });
+    sc.innerHTML = o;
+    sc.disabled = false;
+    msPintarZona('');
+  }
+  msResumen();
+}
+
+function msOnColonia() {
+  const alc = document.getElementById('msAlc').value;
+  const v = document.getElementById('msCol').value;
+  msZona = null;
+  if (v) {
+    const c = msColonias.filter(function (x) { return x.a === alc && x.c === v; })[0];
+    if (c) {
+      msZona = { z: Number(c.z) || 0, p: Number(c.p) || 0 };
+      const cp = document.getElementById('msCp');
+      if (cp && !cp.value && c.cp) { const m = String(c.cp).match(/\d{5}/); if (m) cp.value = m[0]; }
+      msPintarZona('ok');
+    }
+  } else {
+    msPintarZona('');
+  }
+  msResumen();
+}
+
+function msPintarZona(estado) {
+  const b = document.getElementById('msZonaBox');
+  if (estado === 'ok' && msZona) {
+    b.style.display = 'flex';
+    b.style.background = '#EBEBDF';
+    b.style.border = '1.5px solid #B4B39C';
+    b.style.color = '#3A3A2E';
+    b.innerHTML = '<span style="font-size:19px;margin-right:10px;">🚚</span><span>Tu dirección es <strong>Zona ' + msZona.z + '</strong>. El envío cuesta <strong>$' + msZona.p + ' MXN</strong> y se suma solo a tu total.</span>';
+  } else if (estado === 'no') {
+    b.style.display = 'flex';
+    b.style.background = '#F9E2D8';
+    b.style.border = '1.5px solid rgba(236,109,74,.4)';
+    b.style.color = '#3A3A2E';
+    b.innerHTML = '<span style="font-size:19px;margin-right:10px;">😕</span><span>Por el momento no damos servicio en esa zona. Si crees que es un error, escríbenos por <a href="https://wa.me/' + MS_WA + '" target="_blank" rel="noopener" style="color:#D4502F;font-weight:800;">WhatsApp al ' + telBonito(MS_WA).replace('+52 ', '') + '</a>.</span>';
+  } else {
+    b.style.display = 'none';
+    b.innerHTML = '';
+  }
+}
+
+// ---- RESUMEN ----
+function msResumen() {
+  let sub = 0, piezas = 0;
+  const partes = [];
+  Object.keys(msSel).forEach(function (id) {
+    const item = msCatalogo[id];
+    if (!item) return;
+    sub += item.precio * msSel[id];
+    piezas += msSel[id];
+    partes.push(msSel[id] + 'x ' + item.nombre);
+  });
+  const env = msZona ? msZona.p : 0;
+  document.getElementById('msResumen').textContent = piezas ? partes.join(' · ') : 'Aún no has agregado platillos';
+  document.getElementById('msSub').textContent = '$' + sub.toLocaleString('es-MX');
+  document.getElementById('msEnv').textContent = msZona ? '$' + env : '—';
+  document.getElementById('msTotal').textContent = '$' + (sub + env).toLocaleString('es-MX');
+  const minEl = document.getElementById('msMinimo');
+  const bajoMinimo = piezas > 0 && sub < MS_MIN;
+  if (minEl) {
+    minEl.style.display = bajoMinimo ? 'block' : 'none';
+    if (bajoMinimo) minEl.innerHTML = '🛒 El pedido mínimo es de <strong>$' + MS_MIN.toLocaleString('es-MX') + '</strong> en platillos (sin incluir envío). Te faltan <strong>$' + (MS_MIN - sub).toLocaleString('es-MX') + '</strong>.';
+  }
+  const btn = document.getElementById('msPagar');
+  const bloqueado = piezas === 0 || bajoMinimo;
+  btn.disabled = bloqueado;
+  btn.style.opacity = bloqueado ? '0.5' : '1';
+}
+
+function msStatus(msg, tipo) {
+  const el = document.getElementById('msStatus');
+  el.textContent = msg;
+  el.style.display = 'block';
+  el.style.background = tipo === 'error' ? '#F9E2D8' : '#EBEBDF';
+  el.style.color = tipo === 'error' ? '#D4502F' : '#6B6A52';
+}
+
+// ---- ENVIAR ----
+async function msSubmit(e) {
+  e.preventDefault();
+  const form = e.target;
+
+  const items = Object.keys(msSel).map(function (id) { return { id: id, qty: msSel[id] }; });
+  if (!items.length) { msStatus('Agrega al menos un platillo a tu pedido.', 'error'); return; }
+  if (!/^\d{10}$/.test(form.telefono.value.trim())) { msStatus('El teléfono debe tener 10 dígitos.', 'error'); return; }
+  if (!msZona) { msStatus('Elige tu alcaldía y colonia para calcular tu zona de envío.', 'error'); return; }
+  var msSubTotal = 0;
+  Object.keys(msSel).forEach(function (id) { if (msCatalogo[id]) msSubTotal += msCatalogo[id].precio * msSel[id]; });
+  if (msSubTotal < MS_MIN) { msStatus('El pedido mínimo es de $' + MS_MIN.toLocaleString('es-MX') + ' en platillos (sin incluir envío).', 'error'); return; }
+
+  const btn = document.getElementById('msPagar');
+  btn.disabled = true;
+  btn.textContent = 'Registrando tu pedido...';
+
+  try {
+    const r = await fetch('/api/pedido-semanal', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        cliente: {
+          nombre: form.nombre.value, email: form.email.value, telefono: form.telefono.value,
+          calle: form.calle.value, numext: form.numext.value, numint: form.numint.value,
+          colonia: form.colonia.value, alcaldia: form.alcaldia.value, cp: form.cp.value
+        },
+        horario: form.horario.value,
+        items: items
+      })
+    });
+    const data = await r.json();
+
+    if (data.init_point || data.fallback === 'mp_link') {
+      // Primero la pantalla con tu número de pedido, después Mercado Pago
+      const esCheckout = !!data.init_point;
+      const destino = data.init_point || data.mp_link;
+      document.getElementById('msFlujo').style.display = 'none';
+      document.getElementById('msExitoFolio').textContent = data.folio;
+      document.getElementById('msExitoTotal').textContent = 'Total a pagar: $' + data.total.toLocaleString('es-MX') + ' MXN';
+      const btnMP = document.getElementById('msExitoMP');
+      btnMP.href = destino;
+      const nota = document.getElementById('msExitoNota');
+      const cuenta = document.getElementById('msExitoCuenta');
+      const comprobante = document.getElementById('msExitoComprobante');
+      const waMsg = encodeURIComponent('¡Hola Lappe! Registré mi pedido del menú semanal 🎉\n🎫 Folio: ' + data.folio + '\n👤 ' + form.nombre.value + '\n💰 Total: $' + data.total + ' MXN\nAquí te envío mi comprobante de pago 🧾');
+      document.getElementById('msExitoWA').href = 'https://wa.me/' + MS_WA + '?text=' + waMsg;
+
+      if (esCheckout) {
+        btnMP.textContent = '💳 Ir a pagar a Mercado Pago';
+        btnMP.removeAttribute('target');
+        nota.innerHTML = 'Guarda o <strong>toma captura</strong> de tu número de pedido y <strong>envíanos la captura por WhatsApp</strong> 📲';
+        nota.style.cssText = 'font-size:16.5px;color:#D4502F;font-weight:700;margin:0 0 16px;line-height:1.5;';
+        comprobante.style.display = 'none';
+        cuenta.style.display = 'block';
+        let seg = 10;
+        cuenta.textContent = 'Te llevamos a Mercado Pago en ' + seg + ' segundos…';
+        const timer = setInterval(function () {
+          seg--;
+          if (seg <= 0) { clearInterval(timer); window.location.href = destino; }
+          else cuenta.textContent = 'Te llevamos a Mercado Pago en ' + seg + ' segundos…';
+        }, 1000);
+      } else {
+        btnMP.textContent = '💳 Pagar con Mercado Pago';
+        btnMP.setAttribute('target', '_blank');
+        nota.innerHTML = 'Al pagar, escribe tu <strong>folio</strong> como referencia del pago.';
+        comprobante.style.display = 'block';
+        cuenta.style.display = 'none';
+      }
+
+      const ex = document.getElementById('msExito');
+      ex.style.display = 'block';
+      ex.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      return;
+    }
+    if (data.error === 'cupo_lleno') {
+      document.getElementById('msCerradoTxt').innerHTML = 'El cupo de pedidos de esta semana ya se llenó 🙏. Los pedidos vuelven a abrir el <strong>lunes a las 8:00 am</strong>.';
+      document.getElementById('msCerrado').style.display = 'block';
+      document.getElementById('msFlujo').style.display = 'none';
+      document.getElementById('msCerrado').scrollIntoView({ behavior: 'smooth', block: 'center' });
+      return;
+    }
+    if (data.error === 'pedidos_cerrados') {
+      document.getElementById('msFlujo').style.display = 'none';
+      document.getElementById('msCerradoTxt').innerHTML = 'El cierre fue el <strong>' + (window.MS_CIERRE_TXT || data.cierre || 'miércoles') + ' a las ' + (window.MS_CIERRE_HORA || '8:00 pm') + '</strong>.';
+      document.getElementById('msCerrado').style.display = 'block';
+      return;
+    }
+    msStatus('❌ ' + (data.error === 'datos_incompletos' ? 'Revisa tus datos: nombre, teléfono a 10 dígitos y dirección completa.'
+      : data.error === 'zona_invalida' ? 'No encontramos tu colonia en nuestras rutas. Revisa tu alcaldía y colonia.'
+      : 'No pudimos procesar tu pedido. Intenta de nuevo.'), 'error');
+  } catch (err) {
+    msStatus('❌ Error de conexión. Intenta de nuevo.', 'error');
+  } finally {
+    btn.disabled = false;
+    btn.textContent = '💳 Pagar con Mercado Pago';
+    msResumen();
+  }
+}
+</script>
+<script>
+(function () {
+  var slides = document.querySelectorAll('.hero-slide');
+  if (slides.length < 2) return;
+  var i = 0;
+  setInterval(function () {
+    slides[i].classList.remove('on');
+    i = (i + 1) % slides.length;
+    slides[i].classList.add('on');
+  }, 5000);
+})();
+</script>
+</body>
+</html>
